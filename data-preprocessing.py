@@ -1,3 +1,346 @@
+import anthropic
+import json
+import os
+from typing import List, Dict, Any, Optional
+
+class CharacterBehaviorDataPreprocessor:
+    """
+    Advanced data preprocessing pipeline for character behavior modeling
+    
+    Leverages Claude.ai Pro API for intelligent feature augmentation
+    """
+    
+    def __init__(
+        self, 
+        novel_text: str,
+        api_key: Optional[str] = None,
+        novel_title: str = "Anne of Green Gables",
+        author: str = "Lucy Maud Montgomery"
+    ):
+        # Core text processing configuration
+        self.novel_text = novel_text
+        self.novel_title = novel_title
+        self.author = author
+        
+        # Claude.ai API Client
+        self.claude_client = anthropic.Anthropic(api_key=api_key) if api_key else None
+        
+        # Initialize NLP processing tools
+        import spacy
+        import nltk
+        nltk.download('punkt', quiet=True)
+        self.nlp = spacy.load("en_core_web_sm")
+        self.tokenizer = self._initialize_tokenizer()
+    
+    def _initialize_tokenizer(self):
+        """
+        Initialize tokenization method
+        Supports fallback mechanisms
+        """
+        try:
+            from transformers import AutoTokenizer
+            return AutoTokenizer.from_pretrained("facebook/opt-350m")
+        except ImportError:
+            # Fallback tokenization
+            import nltk
+            return nltk.word_tokenize
+    
+    def augment_scene_features(
+        self, 
+        scene_context: str
+    ) -> Dict[str, Any]:
+        """
+        Use Claude.ai Pro API for comprehensive feature augmentation
+        
+        Args:
+            scene_context (str): Full text of the scene
+        
+        Returns:
+            Dict: Augmented scene features with scholarly insights
+        """
+        if not self.claude_client:
+            raise ValueError("Claude.ai API client not configured")
+        
+        try:
+            # Construct detailed augmentation prompt
+            response = self.claude_client.messages.create(
+                model="claude-3-opus-20240229",
+                max_tokens=4096,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": f"""
+                        Perform an advanced, multi-dimensional feature extraction for a scene 
+                        from '{self.novel_title}' by {self.author}.
+
+                        Scene Context:
+                        ```
+                        {scene_context}
+                        ```
+
+                        Generate a comprehensive JSON with deep insights across these dimensions:
+
+                        1. Time-Space Coordinates
+                           - Geographical context
+                           - Historical period details
+                           - Social environment nuances
+
+                        2. Character History
+                           - Relationship dynamics
+                           - Social network mapping
+                           - Character development insights
+
+                        3. Emotional Expression
+                           - Emotional landscape
+                           - Communication subtexts
+                           - Psychological undertones
+
+                        4. Inner Psychological State
+                           - Motivational drivers
+                           - Underlying psychological mechanisms
+                           - Implicit character thoughts
+
+                        5. Conversation Dynamics
+                           - Dialogue structure
+                           - Power dynamics
+                           - Communication strategies
+
+                        6. Motivational Dimensions
+                           - Core psychological motivations
+                           - Social and personal drivers
+                           - Contextual motivation analysis
+
+                        Provide scholarly, interdisciplinary perspectives. 
+                        Include literary, sociological, and psychological insights.
+                        Use academic rigor and nuanced interpretation.
+                        """
+                    }
+                ]
+            )
+            
+            # Extract and parse the response
+            feature_json = self._parse_claude_response(
+                response.content[0].text
+            )
+            
+            return feature_json
+        
+        except Exception as e:
+            print(f"Feature augmentation error: {e}")
+            # Fallback to previous feature extraction method
+            return self._fallback_feature_extraction(scene_context)
+    
+    def _parse_claude_response(self, response_text: str) -> Dict[str, Any]:
+        """
+        Robust parsing of Claude.ai generated feature JSON
+        
+        Args:
+            response_text (str): Raw response from Claude
+        
+        Returns:
+            Dict: Parsed feature JSON
+        """
+        # Multiple parsing strategies
+        parsing_strategies = [
+            lambda x: json.loads(x),  # Standard JSON parsing
+            lambda x: json.loads(x.split('```json')[-1].split('```')[0]),  # Markdown code block
+            self._fallback_json_parsing  # Custom fallback parsing
+        ]
+        
+        for strategy in parsing_strategies:
+            try:
+                return strategy(response_text)
+            except Exception:
+                continue
+        
+        # Ultimate fallback
+        return self._fallback_feature_extraction(response_text)
+    
+    def _fallback_json_parsing(self, text: str) -> Dict[str, Any]:
+        """
+        Advanced fallback JSON parsing with error correction
+        
+        Args:
+            text (str): Potentially malformed JSON text
+        
+        Returns:
+            Dict: Parsed feature dictionary
+        """
+        import re
+        
+        # Remove potential markdown code block markers
+        clean_text = re.sub(r'```(json)?', '', text)
+        
+        # Attempt more lenient parsing
+        import ast
+        try:
+            # Try literal evaluation
+            return ast.literal_eval(clean_text)
+        except Exception:
+            # Last resort parsing
+            return self._extract_json_like_structure(clean_text)
+    
+    def _extract_json_like_structure(self, text: str) -> Dict[str, Any]:
+        """
+        Extract JSON-like structure from text
+        
+        Fallback method for extreme parsing scenarios
+        """
+        return {
+            "time_space": {"description": "Unable to fully parse scene context"},
+            "character_history": {"characters": []},
+            "expression": {"emotional_state": "parsing_error"},
+            "inner_thought": {"psychological_insights": []},
+            "conversation": {"dialogue_structure": "parsing_failed"},
+            "motivation": {"core_drivers": []}
+        }
+    
+    def _fallback_feature_extraction(self, scene_context: str) -> Dict[str, Any]:
+        """
+        Basic feature extraction when advanced methods fail
+        
+        Args:
+            scene_context (str): Scene text
+        
+        Returns:
+            Dict: Minimal feature representation
+        """
+        # Use SpaCy for basic feature extraction
+        doc = self.nlp(scene_context)
+        
+        return {
+            "time_space": {
+                "locations": [ent.text for ent in doc.ents if ent.label_ == "GPE"],
+                "temporal_markers": [token.text for token in doc if token.pos_ == "TIME"]
+            },
+            "character_history": {
+                "characters": [ent.text for ent in doc.ents if ent.label_ == "PERSON"]
+            },
+            "expression": {
+                "emotional_keywords": [
+                    token.text for token in doc 
+                    if token.text.lower() in [
+                        "happy", "sad", "angry", "excited", 
+                        "frustrated", "worried"
+                    ]
+                ]
+            },
+            "inner_thought": {
+                "reflection_markers": [
+                    sent.text for sent in doc.sents 
+                    if any(word.lower() in ["thought", "wondered", "imagined"] for word in sent)
+                ]
+            },
+            "conversation": {
+                "dialogue_instances": [
+                    sent.text for sent in doc.sents 
+                    if '"' in sent.text
+                ]
+            },
+            "motivation": {
+                "goal_keywords": [
+                    token.text for token in doc 
+                    if token.text.lower() in [
+                        "want", "need", "desire", "hope", 
+                        "dream", "wish"
+                    ]
+                ]
+            }
+        }
+    
+    def process_novel(self) -> List[Dict]:
+        """
+        Comprehensive novel preprocessing pipeline
+        
+        Leverages Claude.ai Pro for advanced feature augmentation
+        
+        Returns:
+            List of scene tokens with comprehensive features
+        """
+        # Scene segmentation using hybrid approach
+        scenes = self.split_into_scenes()
+        
+        processed_scenes = []
+        
+        for scene in scenes:
+            try:
+                # Use Claude.ai for comprehensive feature augmentation
+                augmented_features = self.augment_scene_features(scene)
+                processed_scenes.append(augmented_features)
+            
+            except Exception as e:
+                print(f"Scene processing error: {e}")
+                # Fallback to basic feature extraction
+                fallback_features = self._fallback_feature_extraction(scene)
+                processed_scenes.append(fallback_features)
+        
+        return processed_scenes
+    
+    def save_processed_data(
+        self, 
+        output_path: str = "anne_of_green_gables_processed.json"
+    ):
+        """
+        Save processed novel data to JSON
+        
+        Comprehensive error handling and logging
+        """
+        try:
+            processed_data = self.process_novel()
+            
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(processed_data, f, indent=2)
+            
+            print(f"Processed novel data saved to {output_path}")
+            print(f"Total scenes processed: {len(processed_data)}")
+        
+        except Exception as e:
+            print(f"Error saving processed data: {e}")
+    
+    @classmethod
+    def create_preprocessing_pipeline(
+        cls,
+        novel_path: str,
+        claude_api_key: Optional[str] = None
+    ) -> 'CharacterBehaviorDataPreprocessor':
+        """
+        Factory method to create preprocessing pipeline
+        
+        Args:
+            novel_path (str): Path to novel text file
+            claude_api_key (Optional[str]): Claude.ai API key
+        
+        Returns:
+            Configured preprocessing instance
+        """
+        # Read novel text
+        with open(novel_path, 'r', encoding='utf-8') as f:
+            novel_text = f.read()
+        
+        # Create and return preprocessor
+        return cls(
+            novel_text,
+            api_key=claude_api_key
+        )
+
+# Example usage
+def main():
+    # Configuration
+    NOVEL_PATH = "anne_of_green_gables.txt"
+    OUTPUT_PATH = "processed_anne_of_green_gables.json"
+    CLAUDE_API_KEY = os.getenv("CLAUDE_API_KEY")
+    
+    # Create and execute preprocessing pipeline
+    preprocessor = CharacterBehaviorDataPreprocessor.create_preprocessing_pipeline(
+        novel_path=NOVEL_PATH,
+        claude_api_key=CLAUDE_API_KEY
+    )
+    
+    # Process and save novel data
+    preprocessor.save_processed_data(OUTPUT_PATH)
+
+if __name__ == "__main__":
+    main()
     def process_novel(self) -> List[Dict]:
         """
         Comprehensive novel preprocessing pipeline with metadata-enhanced feature augmentation
