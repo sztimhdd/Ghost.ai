@@ -1,0 +1,5618 @@
+[
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [
+          "Avonlea",
+          "Green Gables",
+          "Green Gables"
+        ],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {
+        "Avonlea": {
+          "latitude": 50.0145867,
+          "longitude": -105.0556457
+        },
+        "Green Gables": {
+          "latitude": 30.208418700000003,
+          "longitude": -95.51004209982418
+        }
+      }
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Lucy Maude Montgomery",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Ann of",
+        "Lucy Maude Montgomery",
+        "Cuthbert",
+        "Anne",
+        "Marilla",
+        "Diana"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Ann of"
+          },
+          {
+            "id": "Cuthbert"
+          },
+          {
+            "id": "Marilla"
+          }
+        ],
+        "links": [
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Anne"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Diana"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Ann of"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Cuthbert"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Marilla"
+          },
+          {
+            "source": "Anne",
+            "target": "Diana"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Ann of"
+          },
+          {
+            "source": "Anne",
+            "target": "Cuthbert"
+          },
+          {
+            "source": "Anne",
+            "target": "Marilla"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Diana",
+            "target": "Ann of"
+          },
+          {
+            "source": "Diana",
+            "target": "Cuthbert"
+          },
+          {
+            "source": "Diana",
+            "target": "Marilla"
+          },
+          {
+            "source": "Ann of",
+            "target": "Cuthbert"
+          },
+          {
+            "source": "Ann of",
+            "target": "Marilla"
+          },
+          {
+            "source": "Cuthbert",
+            "target": "Marilla"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.014,
+        "neu": 0.826,
+        "pos": 0.16,
+        "compound": 0.9966
+      },
+      "vader_sentiment": {
+        "neg": 0.013,
+        "neu": 0.829,
+        "pos": 0.159,
+        "compound": 0.9968
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [
+        "Anne \nthought those walks to and from school with Diana couldn\u2019t be \nimproved upon even by imagination."
+      ],
+      "psychological_structures": [
+        {
+          "root": "said",
+          "dependency": "advcl",
+          "text": "drawing"
+        },
+        {
+          "root": "Is",
+          "dependency": "xcomp",
+          "text": "be"
+        },
+        {
+          "root": "is",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "xcomp",
+          "text": "have"
+        },
+        {
+          "root": "is",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "is"
+        },
+        {
+          "root": "said",
+          "dependency": "advcl",
+          "text": "peeping"
+        },
+        {
+          "root": "calculating",
+          "dependency": "advcl",
+          "text": "divided"
+        },
+        {
+          "root": "got",
+          "dependency": "advcl",
+          "text": "divided"
+        },
+        {
+          "root": "enough",
+          "dependency": "xcomp",
+          "text": "tantalize"
+        },
+        {
+          "root": "thought",
+          "dependency": "ccomp",
+          "text": "improved"
+        },
+        {
+          "root": "was",
+          "dependency": "advcl",
+          "text": "go"
+        },
+        {
+          "root": "was",
+          "dependency": "advcl",
+          "text": "was"
+        },
+        {
+          "root": "named",
+          "dependency": "advcl",
+          "text": "been"
+        },
+        {
+          "root": "explained",
+          "dependency": "ccomp",
+          "text": "walk"
+        },
+        {
+          "root": "want",
+          "dependency": "xcomp",
+          "text": "have"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "advcl",
+          "text": "do"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "imagine"
+        },
+        {
+          "root": "like",
+          "dependency": "advcl",
+          "text": "think"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Lucy Maude Montgomery",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Ann of",
+        "Lucy Maude Montgomery",
+        "Cuthbert",
+        "Anne",
+        "Marilla",
+        "Diana"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [
+        "want"
+      ],
+      "motivation_context": [
+        "So we want to have one, too."
+      ]
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [
+          "Avonlea"
+        ],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {
+        "Avonlea": {
+          "latitude": 50.0145867,
+          "longitude": -105.0556457
+        }
+      }
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Diana",
+        "Anne",
+        "Barry",
+        "Beyond Willowmere",
+        "Andrew Bell\u2019s",
+        "Anne",
+        "Diana",
+        "Marilla",
+        "Diana",
+        "Diana",
+        "Marilla",
+        "Anne",
+        "Bell",
+        "Lucy Maude Montgomery",
+        "Anne",
+        "Diana",
+        "Marilla",
+        "Anne",
+        "Anne"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Barry"
+          },
+          {
+            "id": "Beyond Willowmere"
+          },
+          {
+            "id": "Andrew Bell\u2019s"
+          },
+          {
+            "id": "Marilla"
+          },
+          {
+            "id": "Bell"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          }
+        ],
+        "links": [
+          {
+            "source": "Diana",
+            "target": "Anne"
+          },
+          {
+            "source": "Diana",
+            "target": "Barry"
+          },
+          {
+            "source": "Diana",
+            "target": "Beyond Willowmere"
+          },
+          {
+            "source": "Diana",
+            "target": "Andrew Bell\u2019s"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Diana",
+            "target": "Marilla"
+          },
+          {
+            "source": "Diana",
+            "target": "Bell"
+          },
+          {
+            "source": "Diana",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Barry"
+          },
+          {
+            "source": "Anne",
+            "target": "Beyond Willowmere"
+          },
+          {
+            "source": "Anne",
+            "target": "Andrew Bell\u2019s"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Marilla"
+          },
+          {
+            "source": "Anne",
+            "target": "Bell"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Barry",
+            "target": "Beyond Willowmere"
+          },
+          {
+            "source": "Barry",
+            "target": "Andrew Bell\u2019s"
+          },
+          {
+            "source": "Barry",
+            "target": "Marilla"
+          },
+          {
+            "source": "Barry",
+            "target": "Bell"
+          },
+          {
+            "source": "Barry",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Beyond Willowmere",
+            "target": "Andrew Bell\u2019s"
+          },
+          {
+            "source": "Beyond Willowmere",
+            "target": "Marilla"
+          },
+          {
+            "source": "Beyond Willowmere",
+            "target": "Bell"
+          },
+          {
+            "source": "Beyond Willowmere",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Andrew Bell\u2019s",
+            "target": "Marilla"
+          },
+          {
+            "source": "Andrew Bell\u2019s",
+            "target": "Bell"
+          },
+          {
+            "source": "Andrew Bell\u2019s",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Marilla",
+            "target": "Marilla"
+          },
+          {
+            "source": "Marilla",
+            "target": "Bell"
+          },
+          {
+            "source": "Marilla",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Bell",
+            "target": "Lucy Maude Montgomery"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.016,
+        "neu": 0.892,
+        "pos": 0.092,
+        "compound": 0.9918
+      },
+      "vader_sentiment": {
+        "neg": 0.016,
+        "neu": 0.889,
+        "pos": 0.096,
+        "compound": 0.9931
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [
+        "Other people besides Anne thought so when they stumbled on it. \n"
+      ],
+      "psychological_structures": [
+        {
+          "root": "went",
+          "dependency": "advcl",
+          "text": "starting"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "met"
+        },
+        {
+          "root": "came",
+          "dependency": "ccomp",
+          "text": "rustling"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "came"
+        },
+        {
+          "root": "told",
+          "dependency": "ccomp",
+          "text": "are"
+        },
+        {
+          "root": "says",
+          "dependency": "ccomp",
+          "text": "are"
+        },
+        {
+          "root": "imagine",
+          "dependency": "ccomp",
+          "text": "see"
+        },
+        {
+          "root": "says",
+          "dependency": "ccomp",
+          "text": "saw"
+        },
+        {
+          "root": "is",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "xcomp",
+          "text": "be"
+        },
+        {
+          "root": "wanted",
+          "dependency": "xcomp",
+          "text": "to"
+        },
+        {
+          "root": "sure",
+          "dependency": "ccomp",
+          "text": "found"
+        },
+        {
+          "root": "thought",
+          "dependency": "advcl",
+          "text": "stumbled"
+        },
+        {
+          "root": "was",
+          "dependency": "advcl",
+          "text": "winding"
+        },
+        {
+          "root": "came",
+          "dependency": "advcl",
+          "text": "sifted"
+        },
+        {
+          "root": "sifted",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "grew",
+          "dependency": "ccomp",
+          "text": "fringed"
+        },
+        {
+          "root": "fringed",
+          "dependency": "advcl",
+          "text": "stemmed"
+        },
+        {
+          "root": "see",
+          "dependency": "advcl",
+          "text": "were"
+        },
+        {
+          "root": "see",
+          "dependency": "advcl",
+          "text": "happened"
+        },
+        {
+          "root": "put",
+          "dependency": "advcl",
+          "text": "keep"
+        },
+        {
+          "root": "seen",
+          "dependency": "ccomp",
+          "text": "start"
+        },
+        {
+          "root": "manage",
+          "dependency": "xcomp",
+          "text": "hold"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Diana",
+        "Anne",
+        "Barry",
+        "Beyond Willowmere",
+        "Andrew Bell\u2019s",
+        "Anne",
+        "Diana",
+        "Marilla",
+        "Diana",
+        "Diana",
+        "Marilla",
+        "Anne",
+        "Bell",
+        "Lucy Maude Montgomery",
+        "Anne",
+        "Diana",
+        "Marilla",
+        "Anne",
+        "Anne"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [],
+      "motivation_context": [
+        "She wanted to, so I let her; but \nI\u2019m sure I could have found something more poetical than plain Birch \nPath."
+      ]
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [
+          "the Lake of Shining Waters",
+          "Avonlea"
+        ],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {
+        "Avonlea": {
+          "latitude": 50.0145867,
+          "longitude": -105.0556457
+        }
+      }
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Anne",
+        "Queen\u2019s \nAcademy",
+        "Tillie Boulter",
+        "Lucy Maude Montgomery",
+        "Ruby Gillis",
+        "Ruby \nGillis",
+        "Anne Shirley",
+        "Anne",
+        "Diana",
+        "Diana",
+        "Phillips",
+        "Marilla",
+        "Ruby Gillis",
+        "Sophia Sloane",
+        "Tillie Boulter",
+        "Marilla",
+        "Jane Andrews",
+        "Prissy Andrews",
+        "Sara Gillis",
+        "Lucy Maude Montgomery",
+        "Marilla",
+        "Anne",
+        "Diana"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Queen\u2019s \nAcademy"
+          },
+          {
+            "id": "Tillie Boulter"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Ruby Gillis"
+          },
+          {
+            "id": "Ruby \nGillis"
+          },
+          {
+            "id": "Anne Shirley"
+          },
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Phillips"
+          },
+          {
+            "id": "Marilla"
+          },
+          {
+            "id": "Sophia Sloane"
+          },
+          {
+            "id": "Jane Andrews"
+          },
+          {
+            "id": "Prissy Andrews"
+          },
+          {
+            "id": "Sara Gillis"
+          }
+        ],
+        "links": [
+          {
+            "source": "Anne",
+            "target": "Queen\u2019s \nAcademy"
+          },
+          {
+            "source": "Anne",
+            "target": "Tillie Boulter"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Anne",
+            "target": "Ruby \nGillis"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Diana"
+          },
+          {
+            "source": "Anne",
+            "target": "Phillips"
+          },
+          {
+            "source": "Anne",
+            "target": "Marilla"
+          },
+          {
+            "source": "Anne",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Anne",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Anne",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Anne",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Tillie Boulter"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Ruby \nGillis"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Diana"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Phillips"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Marilla"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Queen\u2019s \nAcademy",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Ruby \nGillis"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Diana"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Phillips"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Marilla"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Tillie Boulter"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Ruby \nGillis"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Diana"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Phillips"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Marilla"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Ruby \nGillis"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Diana"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Phillips"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Marilla"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Ruby \nGillis",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Ruby \nGillis",
+            "target": "Diana"
+          },
+          {
+            "source": "Ruby \nGillis",
+            "target": "Phillips"
+          },
+          {
+            "source": "Ruby \nGillis",
+            "target": "Marilla"
+          },
+          {
+            "source": "Ruby \nGillis",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Ruby \nGillis",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Ruby \nGillis",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Ruby \nGillis",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Diana"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Phillips"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Marilla"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Diana",
+            "target": "Phillips"
+          },
+          {
+            "source": "Diana",
+            "target": "Marilla"
+          },
+          {
+            "source": "Diana",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Diana",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Diana",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Diana",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Phillips",
+            "target": "Marilla"
+          },
+          {
+            "source": "Phillips",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Phillips",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Phillips",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Phillips",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Marilla",
+            "target": "Sophia Sloane"
+          },
+          {
+            "source": "Marilla",
+            "target": "Marilla"
+          },
+          {
+            "source": "Marilla",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Marilla",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Marilla",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Sophia Sloane",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Sophia Sloane",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Sophia Sloane",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Jane Andrews",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Jane Andrews",
+            "target": "Sara Gillis"
+          },
+          {
+            "source": "Prissy Andrews",
+            "target": "Sara Gillis"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.037,
+        "neu": 0.807,
+        "pos": 0.156,
+        "compound": 0.998
+      },
+      "vader_sentiment": {
+        "neg": 0.035,
+        "neu": 0.816,
+        "pos": 0.149,
+        "compound": 0.998
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [
+        "I felt so morti\ufb01ed, Marilla; he might have \nbeen politer to a stranger, I think.",
+        "Secretly she thought \nAnne\u2019s nose was a remarkable pretty one; but she had no intention of \ntelling her so.\n\n"
+      ],
+      "psychological_structures": [
+        {
+          "root": "better",
+          "dependency": "advcl",
+          "text": "feared"
+        },
+        {
+          "root": "announced",
+          "dependency": "ccomp",
+          "text": "think"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "going"
+        },
+        {
+          "root": "going",
+          "dependency": "xcomp",
+          "text": "like"
+        },
+        {
+          "root": "says",
+          "dependency": "ccomp",
+          "text": "is"
+        },
+        {
+          "root": "says",
+          "dependency": "ccomp",
+          "text": "sits"
+        },
+        {
+          "root": "sits",
+          "dependency": "xcomp",
+          "text": "explain"
+        },
+        {
+          "root": "says",
+          "dependency": "ccomp",
+          "text": "saw"
+        },
+        {
+          "root": "saw",
+          "dependency": "ccomp",
+          "text": "writing"
+        },
+        {
+          "root": "blushed",
+          "dependency": "advcl",
+          "text": "read"
+        },
+        {
+          "root": "says",
+          "dependency": "ccomp",
+          "text": "believe"
+        },
+        {
+          "root": "believe",
+          "dependency": "ccomp",
+          "text": "had"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "let"
+        },
+        {
+          "root": "let",
+          "dependency": "ccomp",
+          "text": "hear"
+        },
+        {
+          "root": "hear",
+          "dependency": "ccomp",
+          "text": "talking"
+        },
+        {
+          "root": "go",
+          "dependency": "advcl",
+          "text": "criticize"
+        },
+        {
+          "root": "guess",
+          "dependency": "ccomp",
+          "text": "teach"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "xcomp",
+          "text": "learn"
+        },
+        {
+          "root": "want",
+          "dependency": "ccomp",
+          "text": "understand"
+        },
+        {
+          "root": "understand",
+          "dependency": "ccomp",
+          "text": "are"
+        },
+        {
+          "root": "are",
+          "dependency": "xcomp",
+          "text": "come"
+        },
+        {
+          "root": "come",
+          "dependency": "advcl",
+          "text": "telling"
+        },
+        {
+          "root": "hope",
+          "dependency": "ccomp",
+          "text": "were"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "hard",
+          "dependency": "advcl",
+          "text": "imagine"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "xcomp",
+          "text": "have"
+        },
+        {
+          "root": "feel",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "has",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "has",
+          "dependency": "advcl",
+          "text": "have"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "held",
+          "dependency": "advcl",
+          "text": "see"
+        },
+        {
+          "root": "see",
+          "dependency": "advcl",
+          "text": "marked"
+        },
+        {
+          "root": "been",
+          "dependency": "ccomp",
+          "text": "felt"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "been"
+        },
+        {
+          "root": "\u2019m",
+          "dependency": "xcomp",
+          "text": "give"
+        },
+        {
+          "root": "let",
+          "dependency": "ccomp",
+          "text": "wear"
+        },
+        {
+          "root": "let",
+          "dependency": "advcl",
+          "text": "ring"
+        },
+        {
+          "root": "have",
+          "dependency": "advcl",
+          "text": "make"
+        },
+        {
+          "root": "make",
+          "dependency": "ccomp",
+          "text": "ring"
+        },
+        {
+          "root": "told",
+          "dependency": "ccomp",
+          "text": "told"
+        },
+        {
+          "root": "told",
+          "dependency": "ccomp",
+          "text": "heard"
+        },
+        {
+          "root": "heard",
+          "dependency": "ccomp",
+          "text": "tell"
+        },
+        {
+          "root": "tell",
+          "dependency": "ccomp",
+          "text": "had"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "tell"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "is"
+        },
+        {
+          "root": "thought",
+          "dependency": "ccomp",
+          "text": "was"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Anne",
+        "Queen\u2019s \nAcademy",
+        "Tillie Boulter",
+        "Lucy Maude Montgomery",
+        "Ruby Gillis",
+        "Ruby \nGillis",
+        "Anne Shirley",
+        "Anne",
+        "Diana",
+        "Diana",
+        "Phillips",
+        "Marilla",
+        "Ruby Gillis",
+        "Sophia Sloane",
+        "Tillie Boulter",
+        "Marilla",
+        "Jane Andrews",
+        "Prissy Andrews",
+        "Sara Gillis",
+        "Lucy Maude Montgomery",
+        "Marilla",
+        "Anne",
+        "Diana"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [
+        "want",
+        "hope"
+      ],
+      "motivation_context": [
+        "And I want you to understand right off that you are not to come \nhome telling tales about him.",
+        "I \nhope you were a good girl.\u201d \n\n"
+      ]
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [
+          "New Brunswick",
+          "Avonlea",
+          "Alberta"
+        ],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {
+        "New Brunswick": {
+          "latitude": 46.500283,
+          "longitude": -66.750183
+        },
+        "Avonlea": {
+          "latitude": 50.0145867,
+          "longitude": -105.0556457
+        },
+        "Alberta": {
+          "latitude": 55.001251,
+          "longitude": -115.002136
+        }
+      }
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Gilbert Blythe",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Gilbert Blythe",
+        "Anne",
+        "Julia Bell\u2019s",
+        "Diana",
+        "Anne",
+        "Anne",
+        "Diana",
+        "Lucy Maude Montgomery",
+        "Charlie Sloane",
+        "Anne",
+        "Charlie Sloane",
+        "Diana Barry",
+        "Gilbert",
+        "Diana",
+        "Gilbert",
+        "Gil",
+        "Anne",
+        "Anne",
+        "Josie Pye",
+        "Phillips",
+        "Diana"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Gilbert Blythe"
+          },
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Julia Bell\u2019s"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Charlie Sloane"
+          },
+          {
+            "id": "Diana Barry"
+          },
+          {
+            "id": "Gilbert"
+          },
+          {
+            "id": "Gil"
+          },
+          {
+            "id": "Josie Pye"
+          },
+          {
+            "id": "Phillips"
+          }
+        ],
+        "links": [
+          {
+            "source": "Gilbert Blythe",
+            "target": "Diana"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Anne"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Julia Bell\u2019s"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Charlie Sloane"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Diana Barry"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gil"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Phillips"
+          },
+          {
+            "source": "Diana",
+            "target": "Anne"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Diana",
+            "target": "Julia Bell\u2019s"
+          },
+          {
+            "source": "Diana",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Diana",
+            "target": "Charlie Sloane"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana Barry"
+          },
+          {
+            "source": "Diana",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Diana",
+            "target": "Gil"
+          },
+          {
+            "source": "Diana",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Diana",
+            "target": "Phillips"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Julia Bell\u2019s"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Charlie Sloane"
+          },
+          {
+            "source": "Anne",
+            "target": "Diana Barry"
+          },
+          {
+            "source": "Anne",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Anne",
+            "target": "Gil"
+          },
+          {
+            "source": "Anne",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Anne",
+            "target": "Phillips"
+          },
+          {
+            "source": "Julia Bell\u2019s",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Julia Bell\u2019s",
+            "target": "Charlie Sloane"
+          },
+          {
+            "source": "Julia Bell\u2019s",
+            "target": "Diana Barry"
+          },
+          {
+            "source": "Julia Bell\u2019s",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Julia Bell\u2019s",
+            "target": "Gil"
+          },
+          {
+            "source": "Julia Bell\u2019s",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Julia Bell\u2019s",
+            "target": "Phillips"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Charlie Sloane"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Diana Barry"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Gil"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Phillips"
+          },
+          {
+            "source": "Charlie Sloane",
+            "target": "Charlie Sloane"
+          },
+          {
+            "source": "Charlie Sloane",
+            "target": "Diana Barry"
+          },
+          {
+            "source": "Charlie Sloane",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Charlie Sloane",
+            "target": "Gil"
+          },
+          {
+            "source": "Charlie Sloane",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Charlie Sloane",
+            "target": "Phillips"
+          },
+          {
+            "source": "Diana Barry",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Diana Barry",
+            "target": "Gil"
+          },
+          {
+            "source": "Diana Barry",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Diana Barry",
+            "target": "Phillips"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Gil"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Phillips"
+          },
+          {
+            "source": "Gil",
+            "target": "Josie Pye"
+          },
+          {
+            "source": "Gil",
+            "target": "Phillips"
+          },
+          {
+            "source": "Josie Pye",
+            "target": "Phillips"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.079,
+        "neu": 0.82,
+        "pos": 0.101,
+        "compound": 0.8708
+      },
+      "vader_sentiment": {
+        "neg": 0.064,
+        "neu": 0.822,
+        "pos": 0.113,
+        "compound": 0.9815
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [],
+      "psychological_structures": [
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "guess"
+        },
+        {
+          "root": "guess",
+          "dependency": "ccomp",
+          "text": "be"
+        },
+        {
+          "root": "indicated",
+          "dependency": "ccomp",
+          "text": "liked"
+        },
+        {
+          "root": "liked",
+          "dependency": "xcomp",
+          "text": "having"
+        },
+        {
+          "root": "having",
+          "dependency": "ccomp",
+          "text": "tormented"
+        },
+        {
+          "root": "said",
+          "dependency": "advcl",
+          "text": "tossing"
+        },
+        {
+          "root": "sure",
+          "dependency": "ccomp",
+          "text": "like"
+        },
+        {
+          "root": "heard",
+          "dependency": "ccomp",
+          "text": "say"
+        },
+        {
+          "root": "say",
+          "dependency": "ccomp",
+          "text": "studied"
+        },
+        {
+          "root": "implored",
+          "dependency": "ccomp",
+          "text": "speak"
+        },
+        {
+          "root": "is",
+          "dependency": "advcl",
+          "text": "got"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "is"
+        },
+        {
+          "root": "like",
+          "dependency": "xcomp",
+          "text": "see"
+        },
+        {
+          "root": "see",
+          "dependency": "ccomp",
+          "text": "dare"
+        },
+        {
+          "root": "dare",
+          "dependency": "xcomp",
+          "text": "write"
+        },
+        {
+          "root": "hastened",
+          "dependency": "xcomp",
+          "text": "add"
+        },
+        {
+          "root": "hastened",
+          "dependency": "ccomp",
+          "text": "would"
+        },
+        {
+          "root": "want",
+          "dependency": "ccomp",
+          "text": "written"
+        },
+        {
+          "root": "was",
+          "dependency": "xcomp",
+          "text": "know"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "played",
+          "dependency": "advcl",
+          "text": "\ufb01gured"
+        },
+        {
+          "root": "sure",
+          "dependency": "ccomp",
+          "text": "written"
+        },
+        {
+          "root": "told",
+          "dependency": "xcomp",
+          "text": "mind"
+        },
+        {
+          "root": "mind",
+          "dependency": "ccomp",
+          "text": "were"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "is"
+        },
+        {
+          "root": "hate",
+          "dependency": "ccomp",
+          "text": "bear"
+        },
+        {
+          "root": "GET",
+          "dependency": "advcl",
+          "text": "wrote"
+        },
+        {
+          "root": "IS",
+          "dependency": "xcomp",
+          "text": "keep"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "have"
+        },
+        {
+          "root": "tell",
+          "dependency": "ccomp",
+          "text": "used"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "advcl",
+          "text": "\u2019s"
+        },
+        {
+          "root": "had",
+          "dependency": "xcomp",
+          "text": "go"
+        },
+        {
+          "root": "go",
+          "dependency": "advcl",
+          "text": "came"
+        },
+        {
+          "root": "\ufb01nd",
+          "dependency": "ccomp",
+          "text": "easy"
+        },
+        {
+          "root": "easy",
+          "dependency": "xcomp",
+          "text": "keep"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "\u2019m"
+        },
+        {
+          "root": "got",
+          "dependency": "advcl",
+          "text": "spelling"
+        },
+        {
+          "root": "peeped",
+          "dependency": "advcl",
+          "text": "mind"
+        },
+        {
+          "root": "looking",
+          "dependency": "ccomp",
+          "text": "see"
+        },
+        {
+          "root": "swept",
+          "dependency": "advcl",
+          "text": "scorn"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "got"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "are"
+        },
+        {
+          "root": "said",
+          "dependency": "advcl",
+          "text": "climbed"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Gilbert Blythe",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Gilbert Blythe",
+        "Anne",
+        "Julia Bell\u2019s",
+        "Diana",
+        "Anne",
+        "Anne",
+        "Diana",
+        "Lucy Maude Montgomery",
+        "Charlie Sloane",
+        "Anne",
+        "Charlie Sloane",
+        "Diana Barry",
+        "Gilbert",
+        "Diana",
+        "Gilbert",
+        "Gil",
+        "Anne",
+        "Anne",
+        "Josie Pye",
+        "Phillips",
+        "Diana"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [
+        "want"
+      ],
+      "motivation_context": [
+        "She didn\u2019t want her name written up."
+      ]
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [
+          "Avonlea",
+          "Avonlea"
+        ],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {
+        "Avonlea": {
+          "latitude": 50.0145867,
+          "longitude": -105.0556457
+        }
+      }
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Phillips",
+        "Diana",
+        "Anne",
+        "Lucy Maude Montgomery",
+        "Anne",
+        "Anne",
+        "Gilbert Blythe",
+        "Ruby Gillis",
+        "Ruby Gillis",
+        "Ruby",
+        "Gilbert",
+        "Anne",
+        "Gilbert Blythe",
+        "Diana",
+        "Phillips",
+        "Prissy Andrews",
+        "Gilbert Blythe",
+        "Anne Shirley",
+        "Anne",
+        "Gilbert Blythe",
+        "Gilbert Blythe",
+        "Lucy Maude Montgomery",
+        "Shirley",
+        "Gilbert",
+        "Anne",
+        "Gilbert",
+        "Anne",
+        "Gilbert"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Phillips"
+          },
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Gilbert Blythe"
+          },
+          {
+            "id": "Ruby Gillis"
+          },
+          {
+            "id": "Ruby"
+          },
+          {
+            "id": "Gilbert"
+          },
+          {
+            "id": "Prissy Andrews"
+          },
+          {
+            "id": "Anne Shirley"
+          },
+          {
+            "id": "Shirley"
+          }
+        ],
+        "links": [
+          {
+            "source": "Phillips",
+            "target": "Diana"
+          },
+          {
+            "source": "Phillips",
+            "target": "Anne"
+          },
+          {
+            "source": "Phillips",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Phillips",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Phillips",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Phillips",
+            "target": "Ruby"
+          },
+          {
+            "source": "Phillips",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Phillips",
+            "target": "Phillips"
+          },
+          {
+            "source": "Phillips",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Phillips",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Phillips",
+            "target": "Shirley"
+          },
+          {
+            "source": "Diana",
+            "target": "Anne"
+          },
+          {
+            "source": "Diana",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Diana",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Diana",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Diana",
+            "target": "Ruby"
+          },
+          {
+            "source": "Diana",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Diana",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Diana",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Diana",
+            "target": "Shirley"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Anne",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Anne",
+            "target": "Ruby"
+          },
+          {
+            "source": "Anne",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Anne",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Anne",
+            "target": "Shirley"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Ruby"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Shirley"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Ruby"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Shirley"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Ruby"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Shirley"
+          },
+          {
+            "source": "Ruby",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Ruby",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Ruby",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Ruby",
+            "target": "Shirley"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Prissy Andrews"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Shirley"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Prissy Andrews",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Prissy Andrews",
+            "target": "Shirley"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Shirley"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.082,
+        "neu": 0.818,
+        "pos": 0.1,
+        "compound": 0.8387
+      },
+      "vader_sentiment": {
+        "neg": 0.08,
+        "neu": 0.823,
+        "pos": 0.098,
+        "compound": 0.8387
+      },
+      "emotion_keywords": [
+        "angry",
+        "angry"
+      ]
+    },
+    "inner_thought": {
+      "introspective_markers": [],
+      "psychological_structures": [
+        {
+          "root": "whispered",
+          "dependency": "advcl",
+          "text": "was"
+        },
+        {
+          "root": "was",
+          "dependency": "advcl",
+          "text": "hearing"
+        },
+        {
+          "root": "whispered",
+          "dependency": "xcomp",
+          "text": "Created"
+        },
+        {
+          "root": "Created",
+          "dependency": "advcl",
+          "text": "\u2019s"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "ccomp",
+          "text": "sitting"
+        },
+        {
+          "root": "see",
+          "dependency": "ccomp",
+          "text": "think"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "had",
+          "dependency": "advcl",
+          "text": "absorbed"
+        },
+        {
+          "root": "fell",
+          "dependency": "ccomp",
+          "text": "started"
+        },
+        {
+          "root": "started",
+          "dependency": "xcomp",
+          "text": "take"
+        },
+        {
+          "root": "fell",
+          "dependency": "advcl",
+          "text": "believing"
+        },
+        {
+          "root": "believing",
+          "dependency": "ccomp",
+          "text": "pulled"
+        },
+        {
+          "root": "sternly",
+          "dependency": "ccomp",
+          "text": "began"
+        },
+        {
+          "root": "began",
+          "dependency": "xcomp",
+          "text": "cry"
+        },
+        {
+          "root": "looked",
+          "dependency": "advcl",
+          "text": "subsided"
+        },
+        {
+          "root": "con\ufb01ded",
+          "dependency": "ccomp",
+          "text": "think"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "IS"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "is",
+          "dependency": "xcomp",
+          "text": "wink"
+        },
+        {
+          "root": "was",
+          "dependency": "ccomp",
+          "text": "began"
+        },
+        {
+          "root": "began",
+          "dependency": "xcomp",
+          "text": "happen"
+        },
+        {
+          "root": "was",
+          "dependency": "advcl",
+          "text": "explaining"
+        },
+        {
+          "root": "was",
+          "dependency": "advcl",
+          "text": "doing"
+        },
+        {
+          "root": "doing",
+          "dependency": "advcl",
+          "text": "pleased"
+        },
+        {
+          "root": "pleased",
+          "dependency": "xcomp",
+          "text": "eating"
+        },
+        {
+          "root": "pleased",
+          "dependency": "advcl",
+          "text": "drawing"
+        },
+        {
+          "root": "trying",
+          "dependency": "xcomp",
+          "text": "make"
+        },
+        {
+          "root": "make",
+          "dependency": "ccomp",
+          "text": "look"
+        },
+        {
+          "root": "trying",
+          "dependency": "advcl",
+          "text": "was"
+        },
+        {
+          "root": "was",
+          "dependency": "advcl",
+          "text": "propped"
+        },
+        {
+          "root": "propped",
+          "dependency": "advcl",
+          "text": "afforded"
+        },
+        {
+          "root": "seeing",
+          "dependency": "ccomp",
+          "text": "save"
+        },
+        {
+          "root": "putting",
+          "dependency": "advcl",
+          "text": "make"
+        },
+        {
+          "root": "make",
+          "dependency": "ccomp",
+          "text": "look"
+        },
+        {
+          "root": "look",
+          "dependency": "advcl",
+          "text": "haired"
+        },
+        {
+          "root": "more",
+          "dependency": "advcl",
+          "text": "look"
+        },
+        {
+          "root": "fallen",
+          "dependency": "ccomp",
+          "text": "sprang"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Phillips",
+        "Diana",
+        "Anne",
+        "Lucy Maude Montgomery",
+        "Anne",
+        "Anne",
+        "Gilbert Blythe",
+        "Ruby Gillis",
+        "Ruby Gillis",
+        "Ruby",
+        "Gilbert",
+        "Anne",
+        "Gilbert Blythe",
+        "Diana",
+        "Phillips",
+        "Prissy Andrews",
+        "Gilbert Blythe",
+        "Anne Shirley",
+        "Anne",
+        "Gilbert Blythe",
+        "Gilbert Blythe",
+        "Lucy Maude Montgomery",
+        "Shirley",
+        "Gilbert",
+        "Anne",
+        "Gilbert",
+        "Anne",
+        "Gilbert"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [],
+      "motivation_context": [
+        "With her chin propped on her hands and her eyes \n\ufb01xed on the blue glimpse of the Lake of Shining Waters that the west \nwindow afforded, she was far away in a gorgeous dreamland hearing and \nseeing nothing save her own wonderful visions.\n\n"
+      ]
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [
+          "Avonlea"
+        ],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {
+        "Avonlea": {
+          "latitude": 50.0145867,
+          "longitude": -105.0556457
+        }
+      }
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Diana",
+        "Ruby Gillis",
+        "Tommy \nSloane",
+        "Phillips",
+        "Anne Shirley",
+        "Anne",
+        "Gilbert",
+        "Phillips",
+        "Lucy Maude Montgomery",
+        "Phillips",
+        "Gilbert",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Ann Shirley",
+        "Ann Shirley",
+        "Anne",
+        "Diana\u2019s",
+        "Charlie Sloane\u2019s",
+        "Josie Pye\u2019s",
+        "Gilbert Blythe",
+        "Anne",
+        "Gilbert Blythe",
+        "Anne",
+        "Anne",
+        "Anne",
+        "Diana",
+        "Lucy Maude Montgomery",
+        "Diana",
+        "Gilbert",
+        "Gilbert Blythe",
+        "Anne",
+        "Diana",
+        "Diana",
+        "Anne",
+        "Gilbert"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Ruby Gillis"
+          },
+          {
+            "id": "Tommy \nSloane"
+          },
+          {
+            "id": "Phillips"
+          },
+          {
+            "id": "Anne Shirley"
+          },
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Gilbert"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Ann Shirley"
+          },
+          {
+            "id": "Diana\u2019s"
+          },
+          {
+            "id": "Charlie Sloane\u2019s"
+          },
+          {
+            "id": "Josie Pye\u2019s"
+          },
+          {
+            "id": "Gilbert Blythe"
+          }
+        ],
+        "links": [
+          {
+            "source": "Diana",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Diana",
+            "target": "Tommy \nSloane"
+          },
+          {
+            "source": "Diana",
+            "target": "Phillips"
+          },
+          {
+            "source": "Diana",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Diana",
+            "target": "Anne"
+          },
+          {
+            "source": "Diana",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Diana",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Diana",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Diana",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Diana",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Diana",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Tommy \nSloane"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Phillips"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Anne"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Phillips"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Anne"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Tommy \nSloane",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Phillips",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Phillips",
+            "target": "Anne"
+          },
+          {
+            "source": "Phillips",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Phillips",
+            "target": "Phillips"
+          },
+          {
+            "source": "Phillips",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Phillips",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Phillips",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Phillips",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Phillips",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Phillips",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Anne Shirley",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Anne",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Anne",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Anne",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Anne",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Anne",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Ann Shirley",
+            "target": "Ann Shirley"
+          },
+          {
+            "source": "Ann Shirley",
+            "target": "Diana\u2019s"
+          },
+          {
+            "source": "Ann Shirley",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Ann Shirley",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Ann Shirley",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Diana\u2019s",
+            "target": "Charlie Sloane\u2019s"
+          },
+          {
+            "source": "Diana\u2019s",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Diana\u2019s",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Charlie Sloane\u2019s",
+            "target": "Josie Pye\u2019s"
+          },
+          {
+            "source": "Charlie Sloane\u2019s",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Josie Pye\u2019s",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert Blythe"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.089,
+        "neu": 0.844,
+        "pos": 0.067,
+        "compound": -0.4835
+      },
+      "vader_sentiment": {
+        "neg": 0.083,
+        "neu": 0.843,
+        "pos": 0.074,
+        "compound": 0.7353
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [
+        "Diana felt that SHE could never have \nresisted Gilbert\u2019s plea.\n\n"
+      ],
+      "psychological_structures": [
+        {
+          "root": "inclined",
+          "dependency": "xcomp",
+          "text": "be"
+        },
+        {
+          "root": "began",
+          "dependency": "xcomp",
+          "text": "cry"
+        },
+        {
+          "root": "let",
+          "dependency": "ccomp",
+          "text": "escape"
+        },
+        {
+          "root": "escape",
+          "dependency": "advcl",
+          "text": "stared"
+        },
+        {
+          "root": "asking",
+          "dependency": "xcomp",
+          "text": "expect"
+        },
+        {
+          "root": "expect",
+          "dependency": "ccomp",
+          "text": "tell"
+        },
+        {
+          "root": "tell",
+          "dependency": "ccomp",
+          "text": "called"
+        },
+        {
+          "root": "was",
+          "dependency": "ccomp",
+          "text": "spoke"
+        },
+        {
+          "root": "teased",
+          "dependency": "ccomp",
+          "text": "paid"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "am"
+        },
+        {
+          "root": "sorry",
+          "dependency": "xcomp",
+          "text": "see"
+        },
+        {
+          "root": "said",
+          "dependency": "advcl",
+          "text": "fact"
+        },
+        {
+          "root": "ought",
+          "dependency": "xcomp",
+          "text": "root"
+        },
+        {
+          "root": "learn",
+          "dependency": "xcomp",
+          "text": "control"
+        },
+        {
+          "root": "read",
+          "dependency": "advcl",
+          "text": "understand"
+        },
+        {
+          "root": "marched",
+          "dependency": "advcl",
+          "text": "dismissed"
+        },
+        {
+          "root": "marched",
+          "dependency": "advcl",
+          "text": "held"
+        },
+        {
+          "root": "tried",
+          "dependency": "xcomp",
+          "text": "intercept"
+        },
+        {
+          "root": "whispered",
+          "dependency": "ccomp",
+          "text": "\u2019m"
+        },
+        {
+          "root": "sorry",
+          "dependency": "ccomp",
+          "text": "made"
+        },
+        {
+          "root": "breathed",
+          "dependency": "advcl",
+          "text": "went"
+        },
+        {
+          "root": "felt",
+          "dependency": "ccomp",
+          "text": "resisted"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "forgive"
+        },
+        {
+          "root": "had",
+          "dependency": "advcl",
+          "text": "meant"
+        },
+        {
+          "root": "understood",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "mind"
+        },
+        {
+          "root": "mind",
+          "dependency": "ccomp",
+          "text": "making"
+        },
+        {
+          "root": "laughs",
+          "dependency": "advcl",
+          "text": "\u2019s"
+        },
+        {
+          "root": "heard",
+          "dependency": "ccomp",
+          "text": "apologize"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Diana",
+        "Ruby Gillis",
+        "Tommy \nSloane",
+        "Phillips",
+        "Anne Shirley",
+        "Anne",
+        "Gilbert",
+        "Phillips",
+        "Lucy Maude Montgomery",
+        "Phillips",
+        "Gilbert",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Ann Shirley",
+        "Ann Shirley",
+        "Anne",
+        "Diana\u2019s",
+        "Charlie Sloane\u2019s",
+        "Josie Pye\u2019s",
+        "Gilbert Blythe",
+        "Anne",
+        "Gilbert Blythe",
+        "Anne",
+        "Anne",
+        "Anne",
+        "Diana",
+        "Lucy Maude Montgomery",
+        "Diana",
+        "Gilbert",
+        "Gilbert Blythe",
+        "Anne",
+        "Diana",
+        "Diana",
+        "Anne",
+        "Gilbert"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [],
+      "motivation_context": []
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [
+          "Avonlea",
+          "Anne"
+        ],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {
+        "Avonlea": {
+          "latitude": 50.0145867,
+          "longitude": -105.0556457
+        },
+        "Anne": {
+          "latitude": 57.801753149999996,
+          "longitude": 26.450329664109177
+        }
+      }
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Anne",
+        "Gilbert Blythe",
+        "Diana",
+        "Bell",
+        "Eben Wright\u2019s",
+        "Phillips",
+        "Wright",
+        "Phillips",
+        "Lucy Maude Montgomery",
+        "Bell",
+        "Jimmy Glover",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Phillips",
+        "Anne Shirley",
+        "Gilbert Blythe",
+        "Lucy Maude Montgomery",
+        "Diana",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Anne"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Gilbert Blythe"
+          },
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Bell"
+          },
+          {
+            "id": "Eben Wright\u2019s"
+          },
+          {
+            "id": "Phillips"
+          },
+          {
+            "id": "Wright"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Jimmy Glover"
+          },
+          {
+            "id": "Anne Shirley"
+          }
+        ],
+        "links": [
+          {
+            "source": "Anne",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Anne",
+            "target": "Diana"
+          },
+          {
+            "source": "Anne",
+            "target": "Bell"
+          },
+          {
+            "source": "Anne",
+            "target": "Eben Wright\u2019s"
+          },
+          {
+            "source": "Anne",
+            "target": "Phillips"
+          },
+          {
+            "source": "Anne",
+            "target": "Wright"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Jimmy Glover"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Diana"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Bell"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Eben Wright\u2019s"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Phillips"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Wright"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Jimmy Glover"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Diana",
+            "target": "Bell"
+          },
+          {
+            "source": "Diana",
+            "target": "Eben Wright\u2019s"
+          },
+          {
+            "source": "Diana",
+            "target": "Phillips"
+          },
+          {
+            "source": "Diana",
+            "target": "Wright"
+          },
+          {
+            "source": "Diana",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Diana",
+            "target": "Jimmy Glover"
+          },
+          {
+            "source": "Diana",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Bell",
+            "target": "Eben Wright\u2019s"
+          },
+          {
+            "source": "Bell",
+            "target": "Phillips"
+          },
+          {
+            "source": "Bell",
+            "target": "Wright"
+          },
+          {
+            "source": "Bell",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Bell",
+            "target": "Bell"
+          },
+          {
+            "source": "Bell",
+            "target": "Jimmy Glover"
+          },
+          {
+            "source": "Bell",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Eben Wright\u2019s",
+            "target": "Phillips"
+          },
+          {
+            "source": "Eben Wright\u2019s",
+            "target": "Wright"
+          },
+          {
+            "source": "Eben Wright\u2019s",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Eben Wright\u2019s",
+            "target": "Jimmy Glover"
+          },
+          {
+            "source": "Eben Wright\u2019s",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Phillips",
+            "target": "Wright"
+          },
+          {
+            "source": "Phillips",
+            "target": "Phillips"
+          },
+          {
+            "source": "Phillips",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Phillips",
+            "target": "Jimmy Glover"
+          },
+          {
+            "source": "Phillips",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Wright",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Wright",
+            "target": "Jimmy Glover"
+          },
+          {
+            "source": "Wright",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Jimmy Glover"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Jimmy Glover",
+            "target": "Anne Shirley"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.05,
+        "neu": 0.869,
+        "pos": 0.081,
+        "compound": 0.9514
+      },
+      "vader_sentiment": {
+        "neg": 0.047,
+        "neu": 0.873,
+        "pos": 0.079,
+        "compound": 0.9593
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [],
+      "psychological_structures": [
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "is",
+          "dependency": "ccomp",
+          "text": "blown"
+        },
+        {
+          "root": "blown",
+          "dependency": "advcl",
+          "text": "happened"
+        },
+        {
+          "root": "are",
+          "dependency": "advcl",
+          "text": "begin"
+        },
+        {
+          "root": "begin",
+          "dependency": "xcomp",
+          "text": "happen"
+        },
+        {
+          "root": "apt",
+          "dependency": "xcomp",
+          "text": "keep"
+        },
+        {
+          "root": "ran",
+          "dependency": "advcl",
+          "text": "saw"
+        },
+        {
+          "root": "saw",
+          "dependency": "ccomp",
+          "text": "emerging"
+        },
+        {
+          "root": "apt",
+          "dependency": "xcomp",
+          "text": "arrive"
+        },
+        {
+          "root": "expect",
+          "dependency": "ccomp",
+          "text": "seized"
+        },
+        {
+          "root": "seized",
+          "dependency": "advcl",
+          "text": "Created"
+        },
+        {
+          "root": "expect",
+          "dependency": "xcomp",
+          "text": "\ufb01nd"
+        },
+        {
+          "root": "expect",
+          "dependency": "advcl",
+          "text": "returned"
+        },
+        {
+          "root": "went",
+          "dependency": "advcl",
+          "text": "intending"
+        },
+        {
+          "root": "intending",
+          "dependency": "xcomp",
+          "text": "stay"
+        },
+        {
+          "root": "enough",
+          "dependency": "xcomp",
+          "text": "pick"
+        },
+        {
+          "root": "picked",
+          "dependency": "ccomp",
+          "text": "are"
+        },
+        {
+          "root": "was",
+          "dependency": "ccomp",
+          "text": "shouting"
+        },
+        {
+          "root": "managed",
+          "dependency": "xcomp",
+          "text": "reach"
+        },
+        {
+          "root": "had",
+          "dependency": "xcomp",
+          "text": "wriggle"
+        },
+        {
+          "root": "singing",
+          "dependency": "advcl",
+          "text": "were"
+        },
+        {
+          "root": "swept",
+          "dependency": "advcl",
+          "text": "was"
+        },
+        {
+          "root": "want",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "looked",
+          "dependency": "ccomp",
+          "text": "want"
+        },
+        {
+          "root": "was",
+          "dependency": "xcomp",
+          "text": "do"
+        },
+        {
+          "root": "found",
+          "dependency": "advcl",
+          "text": "gasping"
+        },
+        {
+          "root": "indulge",
+          "dependency": "advcl",
+          "text": "seem"
+        },
+        {
+          "root": "seem",
+          "dependency": "xcomp",
+          "text": "be"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "indulge"
+        },
+        {
+          "root": "plucked",
+          "dependency": "advcl",
+          "text": "turning"
+        },
+        {
+          "root": "stared",
+          "dependency": "advcl",
+          "text": "turned"
+        },
+        {
+          "root": "queried",
+          "dependency": "ccomp",
+          "text": "hear"
+        },
+        {
+          "root": "hear",
+          "dependency": "ccomp",
+          "text": "said"
+        },
+        {
+          "root": "suppose",
+          "dependency": "ccomp",
+          "text": "meant"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Anne",
+        "Gilbert Blythe",
+        "Diana",
+        "Bell",
+        "Eben Wright\u2019s",
+        "Phillips",
+        "Wright",
+        "Phillips",
+        "Lucy Maude Montgomery",
+        "Bell",
+        "Jimmy Glover",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Phillips",
+        "Anne Shirley",
+        "Gilbert Blythe",
+        "Lucy Maude Montgomery",
+        "Diana",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Anne"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [
+        "want"
+      ],
+      "motivation_context": [
+        "Mr. Phillips\u2019s brief reforming energy was over; he didn\u2019t want the bother \nof punishing a dozen pupils; but it was necessary to do something to \nsave his word, so he looked about for a scapegoat and found it in Anne, \nwho had dropped into her seat, gasping for breath, with a forgotten lily \nwreath hanging askew over one ear and giving her a particularly rakish \nand disheveled appearance. \n\n"
+      ]
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {}
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Anne",
+        "Anne",
+        "Gilbert Blythe",
+        "Ruby Gillis",
+        "Gilbert Blythe",
+        "Anne",
+        "Anne",
+        "Gilbert",
+        "Anne",
+        "Phillips",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Gilbert",
+        "Lucy Maude Montgomery",
+        "Anne\u2019s",
+        "Whereupon Anne",
+        "Gilbert",
+        "Anne",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Gilbert Blythe"
+          },
+          {
+            "id": "Ruby Gillis"
+          },
+          {
+            "id": "Gilbert"
+          },
+          {
+            "id": "Phillips"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Anne\u2019s"
+          },
+          {
+            "id": "Whereupon Anne"
+          },
+          {
+            "id": "Diana"
+          }
+        ],
+        "links": [
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Anne",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Anne",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Anne",
+            "target": "Phillips"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Anne",
+            "target": "Whereupon Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Diana"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Ruby Gillis"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Phillips"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Whereupon Anne"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Diana"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Phillips"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Whereupon Anne"
+          },
+          {
+            "source": "Ruby Gillis",
+            "target": "Diana"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Phillips"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Gilbert"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Whereupon Anne"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Diana"
+          },
+          {
+            "source": "Phillips",
+            "target": "Phillips"
+          },
+          {
+            "source": "Phillips",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Phillips",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Phillips",
+            "target": "Whereupon Anne"
+          },
+          {
+            "source": "Phillips",
+            "target": "Diana"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Whereupon Anne"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Diana"
+          },
+          {
+            "source": "Anne\u2019s",
+            "target": "Whereupon Anne"
+          },
+          {
+            "source": "Anne\u2019s",
+            "target": "Diana"
+          },
+          {
+            "source": "Whereupon Anne",
+            "target": "Diana"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.099,
+        "neu": 0.871,
+        "pos": 0.03,
+        "compound": -0.9854
+      },
+      "vader_sentiment": {
+        "neg": 0.094,
+        "neu": 0.858,
+        "pos": 0.048,
+        "compound": -0.9597
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [
+        "Anne felt that she could not bear it and it would be of no use \nto try."
+      ],
+      "psychological_structures": [
+        {
+          "root": "assure",
+          "dependency": "ccomp",
+          "text": "did\u201d\u2014still"
+        },
+        {
+          "root": "looked",
+          "dependency": "advcl",
+          "text": "Obey"
+        },
+        {
+          "root": "looked",
+          "dependency": "advcl",
+          "text": "meant"
+        },
+        {
+          "root": "meant",
+          "dependency": "xcomp",
+          "text": "disobey"
+        },
+        {
+          "root": "rose",
+          "dependency": "advcl",
+          "text": "realizing"
+        },
+        {
+          "root": "realizing",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "got",
+          "dependency": "advcl",
+          "text": "went"
+        },
+        {
+          "root": "was",
+          "dependency": "ccomp",
+          "text": "told"
+        },
+        {
+          "root": "told",
+          "dependency": "ccomp",
+          "text": "going"
+        },
+        {
+          "root": "going",
+          "dependency": "ccomp",
+          "text": "seen"
+        },
+        {
+          "root": "was",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "bad",
+          "dependency": "xcomp",
+          "text": "singled"
+        },
+        {
+          "root": "worse",
+          "dependency": "xcomp",
+          "text": "sent"
+        },
+        {
+          "root": "sent",
+          "dependency": "advcl",
+          "text": "sit"
+        },
+        {
+          "root": "be",
+          "dependency": "ccomp",
+          "text": "heaping"
+        },
+        {
+          "root": "felt",
+          "dependency": "ccomp",
+          "text": "bear"
+        },
+        {
+          "root": "returned",
+          "dependency": "advcl",
+          "text": "lifted"
+        },
+        {
+          "root": "worked",
+          "dependency": "advcl",
+          "text": "absorbed"
+        },
+        {
+          "root": "gone",
+          "dependency": "advcl",
+          "text": "called"
+        },
+        {
+          "root": "move",
+          "dependency": "advcl",
+          "text": "called"
+        },
+        {
+          "root": "took",
+          "dependency": "advcl",
+          "text": "looking"
+        },
+        {
+          "root": "took",
+          "dependency": "advcl",
+          "text": "Created"
+        },
+        {
+          "root": "took",
+          "dependency": "ccomp",
+          "text": "are"
+        },
+        {
+          "root": "took",
+          "dependency": "advcl",
+          "text": "arose"
+        },
+        {
+          "root": "ground",
+          "dependency": "advcl",
+          "text": "powder"
+        },
+        {
+          "root": "deigning",
+          "dependency": "xcomp",
+          "text": "bestow"
+        },
+        {
+          "root": "marched",
+          "dependency": "advcl",
+          "text": "went"
+        },
+        {
+          "root": "wanted",
+          "dependency": "xcomp",
+          "text": "know"
+        },
+        {
+          "root": "soon",
+          "dependency": "advcl",
+          "text": "were"
+        },
+        {
+          "root": "dared",
+          "dependency": "xcomp",
+          "text": "ask"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "coming"
+        },
+        {
+          "root": "stared",
+          "dependency": "advcl",
+          "text": "see"
+        },
+        {
+          "root": "see",
+          "dependency": "ccomp",
+          "text": "meant"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Anne",
+        "Anne",
+        "Gilbert Blythe",
+        "Ruby Gillis",
+        "Gilbert Blythe",
+        "Anne",
+        "Anne",
+        "Gilbert",
+        "Anne",
+        "Phillips",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Gilbert",
+        "Lucy Maude Montgomery",
+        "Anne\u2019s",
+        "Whereupon Anne",
+        "Gilbert",
+        "Anne",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [],
+      "motivation_context": [
+        "Diana wanted to \nknow, as soon as they were out on the road."
+      ]
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {}
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Anne",
+        "Anne",
+        "Diana",
+        "Phillips",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Lucy Maude Montgomery",
+        "Jane Andrews",
+        "Alice Andrews",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Marilla",
+        "Marilla",
+        "Anne",
+        "Marilla",
+        "Anne",
+        "Marilla",
+        "Anne",
+        "Rachel",
+        "Anne",
+        "Phillips",
+        "Rachel"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Phillips"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Jane Andrews"
+          },
+          {
+            "id": "Alice Andrews"
+          },
+          {
+            "id": "Marilla"
+          },
+          {
+            "id": "Rachel"
+          }
+        ],
+        "links": [
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Diana"
+          },
+          {
+            "source": "Anne",
+            "target": "Phillips"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Anne",
+            "target": "Alice Andrews"
+          },
+          {
+            "source": "Anne",
+            "target": "Marilla"
+          },
+          {
+            "source": "Anne",
+            "target": "Rachel"
+          },
+          {
+            "source": "Diana",
+            "target": "Phillips"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Diana",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Diana",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Diana",
+            "target": "Alice Andrews"
+          },
+          {
+            "source": "Diana",
+            "target": "Marilla"
+          },
+          {
+            "source": "Diana",
+            "target": "Rachel"
+          },
+          {
+            "source": "Phillips",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Phillips",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Phillips",
+            "target": "Alice Andrews"
+          },
+          {
+            "source": "Phillips",
+            "target": "Phillips"
+          },
+          {
+            "source": "Phillips",
+            "target": "Marilla"
+          },
+          {
+            "source": "Phillips",
+            "target": "Rachel"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Jane Andrews"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Alice Andrews"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Marilla"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Rachel"
+          },
+          {
+            "source": "Jane Andrews",
+            "target": "Alice Andrews"
+          },
+          {
+            "source": "Jane Andrews",
+            "target": "Marilla"
+          },
+          {
+            "source": "Jane Andrews",
+            "target": "Rachel"
+          },
+          {
+            "source": "Alice Andrews",
+            "target": "Marilla"
+          },
+          {
+            "source": "Alice Andrews",
+            "target": "Rachel"
+          },
+          {
+            "source": "Marilla",
+            "target": "Marilla"
+          },
+          {
+            "source": "Marilla",
+            "target": "Rachel"
+          },
+          {
+            "source": "Rachel",
+            "target": "Rachel"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.074,
+        "neu": 0.826,
+        "pos": 0.1,
+        "compound": 0.9603
+      },
+      "vader_sentiment": {
+        "neg": 0.073,
+        "neu": 0.829,
+        "pos": 0.098,
+        "compound": 0.9603
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [
+        "\u201cI\u2019ll run down and see Rachel about it this evening,\u201d she thought. \n"
+      ],
+      "psychological_structures": [
+        {
+          "root": "let",
+          "dependency": "ccomp",
+          "text": "stay"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "have"
+        },
+        {
+          "root": "have",
+          "dependency": "xcomp",
+          "text": "to"
+        },
+        {
+          "root": "looked",
+          "dependency": "advcl",
+          "text": "were"
+        },
+        {
+          "root": "ready",
+          "dependency": "xcomp",
+          "text": "cry"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "\u2019re"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "make"
+        },
+        {
+          "root": "make",
+          "dependency": "ccomp",
+          "text": "sit"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "will"
+        },
+        {
+          "root": "know",
+          "dependency": "advcl",
+          "text": "sitting"
+        },
+        {
+          "root": "do",
+          "dependency": "advcl",
+          "text": "come"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "do"
+        },
+        {
+          "root": "let",
+          "dependency": "ccomp",
+          "text": "torn"
+        },
+        {
+          "root": "torn",
+          "dependency": "advcl",
+          "text": "do"
+        },
+        {
+          "root": "ask",
+          "dependency": "ccomp",
+          "text": "do"
+        },
+        {
+          "root": "mourned",
+          "dependency": "ccomp",
+          "text": "harrow"
+        },
+        {
+          "root": "mourned",
+          "dependency": "ccomp",
+          "text": "think"
+        },
+        {
+          "root": "going",
+          "dependency": "xcomp",
+          "text": "build"
+        },
+        {
+          "root": "going",
+          "dependency": "xcomp",
+          "text": "learn"
+        },
+        {
+          "root": "going",
+          "dependency": "xcomp",
+          "text": "bring"
+        },
+        {
+          "root": "going",
+          "dependency": "xcomp",
+          "text": "read"
+        },
+        {
+          "root": "told",
+          "dependency": "ccomp",
+          "text": "go"
+        },
+        {
+          "root": "told",
+          "dependency": "advcl",
+          "text": "got"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "is"
+        },
+        {
+          "root": "said",
+          "dependency": "advcl",
+          "text": "gazing"
+        },
+        {
+          "root": "good",
+          "dependency": "advcl",
+          "text": "be"
+        },
+        {
+          "root": "hold",
+          "dependency": "advcl",
+          "text": "\u2019s"
+        },
+        {
+          "root": "assure",
+          "dependency": "ccomp",
+          "text": "go"
+        },
+        {
+          "root": "unyielding",
+          "dependency": "advcl",
+          "text": "looking"
+        },
+        {
+          "root": "understood",
+          "dependency": "ccomp",
+          "text": "have"
+        },
+        {
+          "root": "re",
+          "dependency": "ccomp",
+          "text": "-"
+        },
+        {
+          "root": "solved",
+          "dependency": "xcomp",
+          "text": "say"
+        },
+        {
+          "root": "thought",
+          "dependency": "ccomp",
+          "text": "run"
+        },
+        {
+          "root": "be",
+          "dependency": "advcl",
+          "text": "takes"
+        },
+        {
+          "root": "Far",
+          "dependency": "advcl",
+          "text": "make"
+        },
+        {
+          "root": "do",
+          "dependency": "xcomp",
+          "text": "say"
+        },
+        {
+          "root": "ought",
+          "dependency": "xcomp",
+          "text": "know"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Anne",
+        "Anne",
+        "Diana",
+        "Phillips",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Lucy Maude Montgomery",
+        "Jane Andrews",
+        "Alice Andrews",
+        "Anne",
+        "Anne",
+        "Phillips",
+        "Marilla",
+        "Marilla",
+        "Anne",
+        "Marilla",
+        "Anne",
+        "Marilla",
+        "Anne",
+        "Rachel",
+        "Anne",
+        "Phillips",
+        "Rachel"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [],
+      "motivation_context": []
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [
+          "Island",
+          "Province"
+        ],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {
+        "Island": {
+          "latitude": 64.9841821,
+          "longitude": -18.1059013
+        },
+        "Province": {
+          "latitude": 36.398987,
+          "longitude": 118.5055691
+        }
+      }
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Lucy Maude Montgomery",
+        "Rachel",
+        "Tillie Boulter",
+        "Marilla",
+        "Rachel",
+        "Marilla",
+        "Lynde",
+        "Lynde",
+        "Phillips",
+        "Anne",
+        "Tillie Boulter",
+        "Anne\u2019s",
+        "Anne",
+        "Marilla",
+        "Marilla",
+        "Lucy Maude Montgomery",
+        "Phillips",
+        "Rachel",
+        "Marilla",
+        "Rachel",
+        "Anne",
+        "Diana",
+        "Gilbert Blythe",
+        "Diana",
+        "Anne",
+        "Gilbert Blythe"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Rachel"
+          },
+          {
+            "id": "Tillie Boulter"
+          },
+          {
+            "id": "Marilla"
+          },
+          {
+            "id": "Lynde"
+          },
+          {
+            "id": "Phillips"
+          },
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Anne\u2019s"
+          },
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Gilbert Blythe"
+          }
+        ],
+        "links": [
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Rachel"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Tillie Boulter"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Marilla"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Lynde"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Phillips"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Anne"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Diana"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Rachel",
+            "target": "Tillie Boulter"
+          },
+          {
+            "source": "Rachel",
+            "target": "Marilla"
+          },
+          {
+            "source": "Rachel",
+            "target": "Rachel"
+          },
+          {
+            "source": "Rachel",
+            "target": "Lynde"
+          },
+          {
+            "source": "Rachel",
+            "target": "Phillips"
+          },
+          {
+            "source": "Rachel",
+            "target": "Anne"
+          },
+          {
+            "source": "Rachel",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Rachel",
+            "target": "Diana"
+          },
+          {
+            "source": "Rachel",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Marilla"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Lynde"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Phillips"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Anne"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Tillie Boulter"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Diana"
+          },
+          {
+            "source": "Tillie Boulter",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Marilla",
+            "target": "Marilla"
+          },
+          {
+            "source": "Marilla",
+            "target": "Lynde"
+          },
+          {
+            "source": "Marilla",
+            "target": "Phillips"
+          },
+          {
+            "source": "Marilla",
+            "target": "Anne"
+          },
+          {
+            "source": "Marilla",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Marilla",
+            "target": "Diana"
+          },
+          {
+            "source": "Marilla",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Lynde",
+            "target": "Lynde"
+          },
+          {
+            "source": "Lynde",
+            "target": "Phillips"
+          },
+          {
+            "source": "Lynde",
+            "target": "Anne"
+          },
+          {
+            "source": "Lynde",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Lynde",
+            "target": "Diana"
+          },
+          {
+            "source": "Lynde",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Phillips",
+            "target": "Anne"
+          },
+          {
+            "source": "Phillips",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Phillips",
+            "target": "Phillips"
+          },
+          {
+            "source": "Phillips",
+            "target": "Diana"
+          },
+          {
+            "source": "Phillips",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne\u2019s"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Diana"
+          },
+          {
+            "source": "Anne",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Anne\u2019s",
+            "target": "Diana"
+          },
+          {
+            "source": "Anne\u2019s",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Diana",
+            "target": "Gilbert Blythe"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Gilbert Blythe",
+            "target": "Gilbert Blythe"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.091,
+        "neu": 0.803,
+        "pos": 0.105,
+        "compound": 0.8236
+      },
+      "vader_sentiment": {
+        "neg": 0.088,
+        "neu": 0.81,
+        "pos": 0.102,
+        "compound": 0.8019
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [
+        "I \nnever thought she\u2019d take with them so well.\u201d \n\n"
+      ],
+      "psychological_structures": [
+        {
+          "root": "suppose",
+          "dependency": "ccomp",
+          "text": "know"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "come"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "reckon"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "know"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "do"
+        },
+        {
+          "root": "declares",
+          "dependency": "ccomp",
+          "text": "go"
+        },
+        {
+          "root": "saw",
+          "dependency": "ccomp",
+          "text": "worked"
+        },
+        {
+          "root": "expecting",
+          "dependency": "advcl",
+          "text": "started"
+        },
+        {
+          "root": "knew",
+          "dependency": "ccomp",
+          "text": "going"
+        },
+        {
+          "root": "said",
+          "dependency": "advcl",
+          "text": "asked"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "loved"
+        },
+        {
+          "root": "loved",
+          "dependency": "xcomp",
+          "text": "asked"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "humor"
+        },
+        {
+          "root": "said",
+          "dependency": "advcl",
+          "text": "\u2019s"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "ccomp",
+          "text": "do"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "do"
+        },
+        {
+          "root": "do",
+          "dependency": "xcomp",
+          "text": "say"
+        },
+        {
+          "root": "did",
+          "dependency": "advcl",
+          "text": "punish"
+        },
+        {
+          "root": "punished",
+          "dependency": "advcl",
+          "text": "\u2019s"
+        },
+        {
+          "root": "making",
+          "dependency": "ccomp",
+          "text": "sit"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "did"
+        },
+        {
+          "root": "thought",
+          "dependency": "ccomp",
+          "text": "take"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "think"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "let"
+        },
+        {
+          "root": "let",
+          "dependency": "ccomp",
+          "text": "stay"
+        },
+        {
+          "root": "is",
+          "dependency": "ccomp",
+          "text": "say"
+        },
+        {
+          "root": "say",
+          "dependency": "advcl",
+          "text": "said"
+        },
+        {
+          "root": "cool",
+          "dependency": "advcl",
+          "text": "Depend"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "ccomp",
+          "text": "cool"
+        },
+        {
+          "root": "ready",
+          "dependency": "xcomp",
+          "text": "go"
+        },
+        {
+          "root": "knows",
+          "dependency": "advcl",
+          "text": "were"
+        },
+        {
+          "root": "were",
+          "dependency": "xcomp",
+          "text": "make"
+        },
+        {
+          "root": "make",
+          "dependency": "ccomp",
+          "text": "go"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "ccomp",
+          "text": "knows"
+        },
+        {
+          "root": "knows",
+          "dependency": "ccomp",
+          "text": "freak"
+        },
+        {
+          "root": "take",
+          "dependency": "advcl",
+          "text": "Created"
+        },
+        {
+          "root": "far",
+          "dependency": "advcl",
+          "text": "goes"
+        },
+        {
+          "root": "is",
+          "dependency": "advcl",
+          "text": "\u2019s"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "ccomp",
+          "text": "what"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "ccomp",
+          "text": "got"
+        },
+        {
+          "root": "got",
+          "dependency": "advcl",
+          "text": "been"
+        },
+        {
+          "root": "got",
+          "dependency": "advcl",
+          "text": "leads"
+        },
+        {
+          "root": "\u2019s",
+          "dependency": "ccomp",
+          "text": "what"
+        },
+        {
+          "root": "declare",
+          "dependency": "ccomp",
+          "text": "know"
+        },
+        {
+          "root": "know",
+          "dependency": "ccomp",
+          "text": "coming"
+        },
+        {
+          "root": "much",
+          "dependency": "advcl",
+          "text": "say"
+        },
+        {
+          "root": "say",
+          "dependency": "ccomp",
+          "text": "were"
+        },
+        {
+          "root": "shook",
+          "dependency": "advcl",
+          "text": "be"
+        },
+        {
+          "root": "did",
+          "dependency": "ccomp",
+          "text": "learned"
+        },
+        {
+          "root": "passed",
+          "dependency": "advcl",
+          "text": "met"
+        },
+        {
+          "root": "made",
+          "dependency": "advcl",
+          "text": "hate"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Lucy Maude Montgomery",
+        "Rachel",
+        "Tillie Boulter",
+        "Marilla",
+        "Rachel",
+        "Marilla",
+        "Lynde",
+        "Lynde",
+        "Phillips",
+        "Anne",
+        "Tillie Boulter",
+        "Anne\u2019s",
+        "Anne",
+        "Marilla",
+        "Marilla",
+        "Lucy Maude Montgomery",
+        "Phillips",
+        "Rachel",
+        "Marilla",
+        "Rachel",
+        "Anne",
+        "Diana",
+        "Gilbert Blythe",
+        "Diana",
+        "Anne",
+        "Gilbert Blythe"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [
+        "desire"
+      ],
+      "motivation_context": [
+        "She learned her lessons at home, did \nher chores, and played with Diana in the chilly purple autumn twilights; \nbut when she met Gilbert Blythe on the road or encountered him in \nSunday school she passed him by with an icy contempt that was no whit \nthawed by his evident desire to appease her."
+      ]
+    }
+  },
+  {
+    "time_space": {
+      "named_entities": {
+        "locations": [],
+        "temporal_markers": []
+      },
+      "geographical_coordinates": {}
+    },
+    "character_history": {
+      "characters_mentioned": [
+        "Gilbert",
+        "Diana",
+        "Anne",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Marilla",
+        "Diana",
+        "Lucy Maude Montgomery",
+        "Diana",
+        "Diana",
+        "Anne",
+        "Marilla",
+        "Matthew",
+        "Marilla",
+        "Anne Shirley",
+        "Marilla"
+      ],
+      "interaction_graph": {
+        "directed": false,
+        "multigraph": false,
+        "graph": {},
+        "nodes": [
+          {
+            "id": "Gilbert"
+          },
+          {
+            "id": "Diana"
+          },
+          {
+            "id": "Anne"
+          },
+          {
+            "id": "Marilla"
+          },
+          {
+            "id": "Lucy Maude Montgomery"
+          },
+          {
+            "id": "Matthew"
+          },
+          {
+            "id": "Anne Shirley"
+          }
+        ],
+        "links": [
+          {
+            "source": "Gilbert",
+            "target": "Diana"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Anne"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Marilla"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Matthew"
+          },
+          {
+            "source": "Gilbert",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Diana",
+            "target": "Anne"
+          },
+          {
+            "source": "Diana",
+            "target": "Diana"
+          },
+          {
+            "source": "Diana",
+            "target": "Marilla"
+          },
+          {
+            "source": "Diana",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Diana",
+            "target": "Matthew"
+          },
+          {
+            "source": "Diana",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne"
+          },
+          {
+            "source": "Anne",
+            "target": "Marilla"
+          },
+          {
+            "source": "Anne",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Anne",
+            "target": "Matthew"
+          },
+          {
+            "source": "Anne",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Marilla",
+            "target": "Lucy Maude Montgomery"
+          },
+          {
+            "source": "Marilla",
+            "target": "Marilla"
+          },
+          {
+            "source": "Marilla",
+            "target": "Matthew"
+          },
+          {
+            "source": "Marilla",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Matthew"
+          },
+          {
+            "source": "Lucy Maude Montgomery",
+            "target": "Anne Shirley"
+          },
+          {
+            "source": "Matthew",
+            "target": "Anne Shirley"
+          }
+        ]
+      }
+    },
+    "expression": {
+      "nltk_sentiment": {
+        "neg": 0.146,
+        "neu": 0.687,
+        "pos": 0.167,
+        "compound": 0.8512
+      },
+      "vader_sentiment": {
+        "neg": 0.139,
+        "neu": 0.679,
+        "pos": 0.182,
+        "compound": 0.9554
+      },
+      "emotion_keywords": []
+    },
+    "inner_thought": {
+      "introspective_markers": [],
+      "psychological_structures": [
+        {
+          "root": "much",
+          "dependency": "advcl",
+          "text": "hated"
+        },
+        {
+          "root": "found",
+          "dependency": "advcl",
+          "text": "coming"
+        },
+        {
+          "root": "found",
+          "dependency": "ccomp",
+          "text": "sitting"
+        },
+        {
+          "root": "found",
+          "dependency": "advcl",
+          "text": "crying"
+        },
+        {
+          "root": "sobbed",
+          "dependency": "ccomp",
+          "text": "\u2019s"
+        },
+        {
+          "root": "know",
+          "dependency": "advcl",
+          "text": "grow"
+        },
+        {
+          "root": "grow",
+          "dependency": "ccomp",
+          "text": "married"
+        },
+        {
+          "root": "do",
+          "dependency": "ccomp",
+          "text": "Created"
+        },
+        {
+          "root": "hate",
+          "dependency": "ccomp",
+          "text": "hate"
+        },
+        {
+          "root": "dressed",
+          "dependency": "ccomp",
+          "text": "imagining"
+        },
+        {
+          "root": "bidding",
+          "dependency": "ccomp",
+          "text": "broke"
+        },
+        {
+          "root": "turned",
+          "dependency": "advcl",
+          "text": "hide"
+        },
+        {
+          "root": "collapsed",
+          "dependency": "ccomp",
+          "text": "was"
+        },
+        {
+          "root": "halted",
+          "dependency": "advcl",
+          "text": "crossing"
+        },
+        {
+          "root": "heard",
+          "dependency": "ccomp",
+          "text": "laugh"
+        },
+        {
+          "root": "soon",
+          "dependency": "advcl",
+          "text": "speak"
+        },
+        {
+          "root": "borrow",
+          "dependency": "advcl",
+          "text": "borrow"
+        },
+        {
+          "root": "said",
+          "dependency": "ccomp",
+          "text": "borrow"
+        },
+        {
+          "root": "think",
+          "dependency": "ccomp",
+          "text": "had"
+        },
+        {
+          "root": "had",
+          "dependency": "advcl",
+          "text": "sure"
+        }
+      ]
+    },
+    "conversation": {
+      "dialogue_segments": [],
+      "potential_speakers": [
+        "Gilbert",
+        "Diana",
+        "Anne",
+        "Anne",
+        "Diana",
+        "Anne",
+        "Diana",
+        "Marilla",
+        "Diana",
+        "Lucy Maude Montgomery",
+        "Diana",
+        "Diana",
+        "Anne",
+        "Marilla",
+        "Matthew",
+        "Marilla",
+        "Anne Shirley",
+        "Marilla"
+      ]
+    },
+    "motivation": {
+      "motivation_keywords": [],
+      "motivation_context": []
+    }
+  }
+]
