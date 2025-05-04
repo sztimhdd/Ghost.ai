@@ -3,7 +3,7 @@
 ### **大型行为模型（LBM）系统蓝图（增强版）**
 
 ---
-
+![测](https://mmbiz.qpic.cn/mmbiz_png/F0AgDGXHkKxV2l4kOJzIqRoqF5g68KCJfeKOqHDnWp6Ja6ZJ5XY7viajlXYVnSNNRCWe9roYBia9HDpmu9QCuv8g/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1)
 #### **1. 目标与范围**
 
 **核心目标**：  
