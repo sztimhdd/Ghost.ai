@@ -181,15 +181,16 @@ We use two collections to separate "What happened" from "How she talks".
         *   "Feel/Think/Want" $\to$ `PsychExpert`.
         *   "Recall/Remember/Who" $\to$ `NarrativeExpert`.
 3.  **Experts (Prompt Generators)**:
+    *   **Narrative Expert (RAG):** Retrieves top_k=3 chunks from narrative_knowledge based on user query. Prompt Injection: "Here is what you remember about this topic: {chunks}."
     *   **Spatial:** Injects `Ghost_Spec.world_knowledge` + current coordinates.
     *   **Psych:** Injects `Ghost_Spec.needs_config` + current trait vectors.
     *   **Narrative:** Performs RAG on `episodic_memory`.
-4.  **`node_rast` (Style Transfer)**:
+5.  **`node_rast` (Style Transfer)**:
     *   Performs Vector Search on `style_exemplars` using user input.
     *   Retrieves top 3 quotes.
     *   Constructs Final System Prompt:
         > "You are [Name]. Your voice references: [Quote 1], [Quote 2]. Adopt this syntax."
-5.  **`node_action`**: calls LLM.
+6.  **`node_action`**: calls LLM.
 
 ---
 
