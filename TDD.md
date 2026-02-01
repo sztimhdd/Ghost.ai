@@ -118,6 +118,20 @@ We use two collections to separate "What happened" from "How she talks".
 ## 4. Module Specifications
 
 ### 4.1 Module 1: The Narrator (Ingestion)
+
+**Goal:** Parse the book into the Vector DB and extract the "Ground Truth" training set.
+
+*   **Step 1: Semantic Chunking**
+    *   Use LlamaIndex `SemanticSplitterNodeParser`.
+    *   Split the book into ~500 distinct scenes.
+*   **Step 2: Dual Extraction**
+    *   **Pass A (Facts):** Summarize the scene into 3 sentences. $\to$ Push to `narrative_knowledge`.
+    *   **Pass B (Quotes):** Extract all dialogue lines spoken by the target character. $\to$ Push to `style_exemplars`.
+*   **Step 3: Training Set Generation**
+    *   For each scene, generate a `TrainingEpisode`:
+        *   `Stimulus`: The line/event before Anne speaks.
+        *   `GroundTruth`: What Anne actually said/did.
+        *   `Context`: The scene summary.
 **Path:** `src/ingestion/`
 
 **Pipeline Flow:**
