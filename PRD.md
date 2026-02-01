@@ -2,119 +2,124 @@
 
 | Project Name | Ghost.ai |
 | :--- | :--- |
-| **Version** | 1.0 |
-| **Status** | Draft |
-| **Last Updated** | February 1, 2026 |
-| **Category** | Agentic AI / Behavioral Modelling |
+| **Version** | 1.0 (Final) |
+| **Status** | Approved |
+| **Date** | February 1, 2026 |
+| **Document Owner** | Product Management |
 
 ---
 
 ## 1. Executive Summary
-**Ghost.ai** is a **Behavioral Compilation Pipeline** designed to transform static narrative text (novels, screenplays) into high-fidelity, autonomous AI agents. Unlike traditional approaches that rely on expensive model fine-tuning, Ghost.ai utilizes a **"Frozen Model, Fluid State"** architecture. It compiles raw text into a portable JSON specification (`Ghost_Spec`) using Inverse Reinforcement Learning (IRL) and DSPy-driven optimization, effectively "reading" a character into existence.
+**Ghost.ai** is a **Behavioral Compilation Pipeline** designed to automate the creation of high-fidelity, autonomous AI characters. By ingesting static narrative text (novels, scripts), the system "compiles" a character into a portable, executable specification.
 
-### 1.1 Core Value Proposition
-*   **For Developers/Game Studios:** Create deeply realistic NPCs that adhere to canonical behavior without manual scripting.
-*   **For Researchers:** A standardized framework for "Cognitive Architectures" that separates the Model (Brain) from the Personality (Soul).
+Unlike traditional Chatbots that rely on generic prompting, or Fine-tuned Models that are rigid and expensive, Ghost.ai employs a **"Frozen Model, Fluid State"** approach. It treats character personality as an optimization problem, iteratively tuning the agent's memory, traits, and behavioral logic until it statistically aligns with the source material.
 
----
-
-## 2. Problem Statement
-Current "Character AI" solutions suffer from:
-1.  **RLHF Bias:** Models are tuned to be helpful assistants, making it difficult to simulate flawed, emotional, or irrational characters (e.g., a jealous child).
-2.  **Context Amnesia:** Agents lose track of complex narrative history or core personality traits over long sessions.
-3.  **Homogenization:** All characters sound like "Corporate English" due to lack of stylometric enforcement.
-
-Ghost.ai solves this by treating character creation as an **Optimization Problem**, not a creative writing prompt.
+**Core Value Proposition:**
+*   **Fidelity:** Agents that adhere to the canonical behavior, voice, and psychology of their source material.
+*   **Autonomy:** Agents capable of navigating complex environments and maintaining long-term internal states (mood, needs) without manual scripting.
+*   **Portability:** The output is a lightweight configuration file ("The Ghost Spec") compatible with modern SOTA LLMs.
 
 ---
 
-## 3. System Architecture & Scope
+## 2. Target Audience & Personas
+1.  **Game Developers (Primary):** Need to populate open worlds with hundreds of unique, deeply interactive NPCs without writing thousands of lines of dialogue trees.
+2.  **AI Researchers:** Need a standardized framework to experiment with Cognitive Architectures and behavioral alignment.
+3.  **Creative Writers:** Need to "test" their characters in simulated scenarios to check for consistency and voice.
 
-The system is divided into three distinct phases.
+---
 
-### Phase 1: The Narrator (Ingestion)
-*   **Goal:** Convert unstructured text into a structured, labeled "Ground Truth" dataset.
-*   **Input:** Raw files (PDF/TXT) of literary works (Target: *Anne of Green Gables*).
-*   **Output:** `Training_Set.jsonl` containing structured **Micro-Scenarios**.
+## 3. User Stories
 
-### Phase 2: The Crucible (Evolution/Training)
-*   **Goal:** Iteratively tune the Agent's configuration until behavior matches the Ground Truth.
-*   **Mechanism:** A closed-loop simulation using **DSPy** to optimize System Prompts, Trait Weights, and Memory selection.
-*   **Output:** The `Ghost_Spec_v3.json` (The "Ghost Bundle").
-
-### Phase 3: The Ghost Engine (Runtime)
-*   **Goal:** Execute the `Ghost_Spec` in real-time interactions.
-*   **Mechanism:** A **LangGraph** orchestration layer using Mixture of Experts (MoE) and Retrieval-Augmented Style Transfer (RAST).
+| ID | As a... | I want to... | So that... |
+| :--- | :--- | :--- | :--- |
+| **US-1** | **Developer** | Upload a raw text file (e.g., novel, script) | The system can automatically extract the character's history and personality. |
+| **US-2** | **Developer** | Define a "Target Character" (e.g., "Anne") | The system knows which entity to profile and ignore others. |
+| **US-3** | **Developer** | View a "Fidelity Score" during training | I know how accurately the agent is currently mimicking the source material. |
+| **US-4** | **End User** | Chat with the agent about past events in the book | The agent recalls specific details accurately. |
+| **US-5** | **End User** | Observe the agent taking initiative (e.g., leaving a conversation) | The agent feels like a living entity with its own needs, not just a reactive chatbot. |
+| **US-6** | **Writer** | See a breakdown of the agent's psychological traits | I can verify if the AI captured the nuance (e.g., High Neuroticism) correctly. |
 
 ---
 
 ## 4. Functional Requirements
 
-### 4.1 Ingestion Layer ("The Narrator")
-*   **FR-1.1 Semantic Chunking:** System must split text based on *Narrative Scenes* (change of time/location), not arbitrary tokens.
-*   **FR-1.2 Event Extraction:** Must extract `(Context, Action, Internal_State)` tuples from scenes.
-    *   *Context:* "Gilbert pulls braid."
-    *   *Action:* "Anne smashes slate."
-    *   *Internal_State:* "Humiliation, Rage."
-*   **FR-1.3 Stylometry Profiling:** System must statistically analyze the text (TF-IDF) to identify "Signature Phrases" and "Syntactic Density" (e.g., usage of adjectives vs. verbs) to populate the `linguistic_bio`.
+The system is divided into three functional phases.
 
-### 4.2 Training Layer ("The Crucible")
-*   **FR-2.1 Simulation Loop:** System must instantiate a "Headless" version of the Runtime agent to generate responses to historical contexts.
-*   **FR-2.2 Auto-Evaluation ("The Judge"):** A scoring function that compares Agent Output vs. Book Truth.
-    *   *Metric:* Cosine Similarity of Intent + Emotional Alignment Score.
-    *   *Pass Threshold:* >90% Fidelity.
-*   **FR-2.3 Optimization Strategy:**
-    *   If Score < 90%, the system must use **DSPy (MIPROv2)** to propose updates to the `Ghost_Spec`.
-    *   *Mutable Parameters:* Trait Vectors (Big Five), System Prompt Instructions, Memory Salience Weights.
-    *   *Immutable Parameters:* The Base LLM Weights.
+### 4.1 Phase 1: Ingestion ("The Narrator")
+The system must parse unstructured text to create a Ground Truth dataset.
 
-### 4.3 Runtime Layer ("The Ghost Engine")
-*   **FR-3.1 MoE Routing:** A router must classify user intent and delegate generation to specific "Expert" chains:
-    *   *Narrative Expert:* Access to deep lore/memory.
-    *   *Spatial Expert:* Access to physical location data.
-    *   *Psych Expert:* Management of Maslow’s Needs.
-*   **FR-3.2 Dynamic State Management:** The agent must maintain a `Needs_State` (e.g., Social Belonging, Hunger) that decays over time and influences behavior.
-*   **FR-3.3 RAST (Retrieval-Augmented Style Transfer):** The inference prompt must be dynamically seeded with 3-5 "Style Exemplars" (quotes from the book) relevant to the current topic to enforce "Voice."
+*   **FR-1.1 Narrative Segmentation:** The system shall automatically split raw text into discrete "Micro-Scenarios" based on narrative context (e.g., scene changes), ensuring no context bleed.
+*   **FR-1.2 Behavioral Extraction:** For each scenario, the system must identify:
+    *   **Stimulus:** The external event or dialogue.
+    *   **Response:** The target character's action and dialogue.
+    *   **Internal State:** The inferred emotion or thought process of the character.
+*   **FR-1.3 Stylometric Profiling:** The system must analyze the character's speech patterns to identify signature phrases, sentence complexity, and vocabulary preferences (Idiolect).
 
----
+### 4.2 Phase 2: Optimization ("The Crucible")
+The system must iteratively train the agent's configuration.
 
-## 5. Data Model: The Ghost Spec
-The core artifact is `Ghost_Spec_v3.json`. The system must strictly adhere to this schema.
+*   **FR-2.1 Simulation Loop:** The system shall run the agent through the extracted Micro-Scenarios without providing the "correct" answer, generating a predicted response.
+*   **FR-2.2 Automated Evaluation:** The system must compare the Predicted Response against the Ground Truth using semantic and emotional metrics.
+*   **FR-2.3 Auto-Tuning:** The system must automatically adjust the agent's configurable parameters (Traits, System Instructions, Memory Weights) to minimize the deviation from the Ground Truth.
+*   **FR-2.4 Convergence Criteria:** The training process shall stop when the Fidelity Score reaches a predefined threshold (e.g., 90%) or progress plateaus.
 
-| Field | Description | Type |
-| :--- | :--- | :--- |
-| `core_personality.traits` | The "Big Five" + Custom traits (0.0 - 1.0 floats). | Mutable (Optimized) |
-| `core_personality.needs` | Maslow's hierarchy states (e.g., `loneliness`). | Dynamic (Runtime) |
-| `linguistic_bio.signatures` | Catchphrases and idiolect markers. | Static (extracted) |
-| `skills` | "Unlockable" capabilities (e.g., `slate_combat`). | Boolean / Level |
-| `memory_graph` | Reference to the Vector DB Cluster ID. | Reference |
+### 4.3 Phase 3: Runtime ("The Ghost Engine")
+The system must serve the agent in real-time.
+
+*   **FR-3.1 Context Routing:** The system shall analyze user input to route the request to the most relevant processing module (e.g., Narrative retrieval vs. Spatial reasoning vs. Emotional reaction).
+*   **FR-3.2 Dynamic Needs System:** The agent must possess an internal state of "Needs" (e.g., Social, Safety, Esteem) that decays over time and influences behavioral output.
+*   **FR-3.3 Style Enforcement:** The agent's output must dynamically incorporate the "Stylometric Profile" extracted in Phase 1 to ensure the voice matches the source material.
+*   **FR-3.4 Skill Execution:** The agent must be able to recognize when a specific capability is required (e.g., "Recite Poetry", "Move to Location") and execute that logic.
 
 ---
 
-## 6. Assumptions & Constraints
+## 5. Information Architecture: The "Ghost Spec"
 
-### 6.1 Technical Constraints
-*   **Base Model:** Gemini 3 Pro (or equivalent SOTA model).
-*   **Orchestration:** **LangGraph** is required for the cyclic state management.
-*   **Optimization:** **DSPy** is required for the feedback loop.
-*   **Vector DB:** ChromaDB or MemGPT-compatible store.
+The output of the platform is the **Ghost Spec**, a structured profile that defines the agent. The PRD requires this artifact to contain:
 
-### 6.2 Logic Assumptions
-*   **The "Method Actor" Assumption:** We assume the base model is intelligent but misaligned. We are not "teaching it to speak"; we are "directing it to act."
-*   **The "90% Fidelity" Rule:** Fidelity is measured by **Intent**, not verbatim text. (e.g., "I hate you" $\approx$ "You are detestable" = PASS).
-*   **The Latency Trade-off:** We accept higher latency (1-3s) for the sake of behavioral depth (MoE + RAST overhead).
+1.  **Core Personality:** Psychological attributes (e.g., Big Five traits) and moral values.
+2.  **Needs Matrix:** Baseline drivers for the character's autonomy (e.g., baseline loneliness tolerance).
+3.  **Linguistic Bio:** Data definition of the character's voice, including catchphrases and syntax preferences.
+4.  **Memory Graph:** A reference to the episodic knowledge base extracted from the text.
+5.  **Skill Registry:** A list of specific capabilities the agent has "unlocked" based on the narrative.
+
+---
+
+## 6. Non-Functional Requirements (NFRs)
+
+*   **NFR-1 Scalability:** The Ingestion pipeline must handle literary works of up to 500,000 words without degradation in extraction quality.
+*   **NFR-2 Latency:** The Runtime Engine must generate a response within 3 seconds (P90) to maintain conversational immersion.
+*   **NFR-3 Modularity:** The "Ghost Spec" must be decoupled from the underlying LLM; switching from Gemini to GPT-4 should require configuration changes, not re-architecture.
+*   **NFR-4 Hallucination Control:** The agent must prioritize "I don't know" or plausible deflections over fabricating facts that contradict the source material.
 
 ---
 
 ## 7. Success Metrics (KPIs)
 
-*   **Behavioral Fidelity Score (BFS):** Average semantic similarity score between Agent Actions and Book Actions across the validation set (Target: >0.85).
-*   **Character Consistency:** Rate of contradiction in "Core Beliefs" over a 50-turn conversation (Target: <2 contradictions).
-*   **Stylometric Match:** Kullback–Leibler (KL) divergence between Agent's word distribution and the original Author's distribution (Target: Low divergence).
+*   **Behavioral Fidelity Score (BFS):** The semantic similarity between the Agent's simulated actions and the Book's actual actions across a hold-out test set. **Target: >0.85**.
+*   **Idiolect Alignment:** The statistical closeness of the Agent's vocabulary distribution to the original character's.
+*   **Training Efficiency:** Time required to "compile" a standard novel into a Ghost Spec. **Target: <2 hours**.
+*   **User Consistency Rating:** In subjective testing, users should not detect "personality breaks" (contradicting core beliefs) in a 50-turn conversation.
 
 ---
 
-## 8. Future Scope (Post-MVP)
-*   **Visual Imagination:** Integrating Stable Diffusion to allow the agent to "imagine" scenes visually.
-*   **Multi-Agent Society:** Simulating an entire village (Avonlea) where distinct Ghost.ai agents interact without user input.
-*   **Real-time Voice:** Integrating low-latency TTS with emotional modulation.
+## 8. Assumptions & Dependencies
+*   **Source Quality:** We assume the input text is of high literary quality with consistent characterization. The system cannot fix poorly written characters.
+*   **Model Capability:** We rely on the reasoning capabilities of SOTA models (Gemini 3 Pro, GPT-4 class) for the internal logic. Smaller models (e.g., 7B parameter) are assumed insufficient for the "Crucible" phase.
+*   **Semantic Measurement:** We assume that current Embedding Models are sufficient to measure the "sameness" of intent between two different phrasings.
+
+---
+
+## 9. References & Inspiration
+
+*   **Foundational Architecture:**
+    *   *Generative Agents: Interactive Simulacra of Human Behavior* (Park et al., 2023) - [arXiv:2304.03442](https://arxiv.org/abs/2304.03442)
+    *   *Cognitive Architectures for Language Agents (CoALA)* (Sumers et al., 2023) - [arXiv:2309.02427](https://arxiv.org/abs/2309.02427)
+*   **Core Libraries:**
+    *   *DSPy (Stanford NLP):* For programmatic optimization of the prompt/weight pipelines. - [GitHub](https://github.com/stanfordnlp/dspy)
+    *   *LangGraph (LangChain):* For stateful, cyclic multi-agent orchestration. - [Documentation](https://python.langchain.com/docs/langgraph)
+    *   *MemGPT:* For OS-level memory hierarchy management. - [Website](https://memgpt.ai/)
+    *   *LlamaIndex:* For hierarchical data ingestion and semantic chunking. - [Website](https://www.llamaindex.ai/)
+*   **Related Projects:**
+    *   *Voyager:* An Open-Ended Embodied Agent with Large Language Models. - [Website](https://voyager.minedojo.org/)
+    *   *SillyTavern:* Open-source frontend for character interactions (Inspiration for Character Cards). - [GitHub](https://github.com/SillyTavern/SillyTavern)
