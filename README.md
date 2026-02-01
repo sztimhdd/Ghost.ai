@@ -1,217 +1,103 @@
----
+# Ghost.ai
 
-### **大型行为模型（LBM）系统蓝图（增强版）**
+**The Behavioral Compiler: Transforming Static Narrative into Dynamic Agency.**
 
----
-![测](https://mmbiz.qpic.cn/mmbiz_png/F0AgDGXHkKxV2l4kOJzIqRoqF5g68KCJfeKOqHDnWp6Ja6ZJ5XY7viajlXYVnSNNRCWe9roYBia9HDpmu9QCuv8g/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1)
-#### **1. 目标与范围**
+![Ghost.ai Architecture](https://github.com/sztimhdd/Ghost.ai/blob/main/Arch-diagram-v1.jpeg?raw=true)
 
-**核心目标**：  
-构建一个基于多模态输入和动态记忆管理的大型行为模型（LBM），通过**Generative Agents**的架构设计，结合领域专家MoE（Mixture of Experts）模型，实现以下能力：  
-- **精准行为预测**：在复杂物理、社交、情感场景中模拟人类决策链。  
-- **长时程一致性**：支持跨天、跨周的行为连贯性（如持续跟踪角色关系演变）。  
-- **多模态交互**：融合视觉、听觉、文本输入生成自然行为输出（如对话、动作）。  
+> **"Frozen Model, Fluid State."**
 
-**应用场景**：  
-- 虚拟社交环境（如模拟社区活动扩散）。  
-- 游戏NPC自主决策（如开放世界任务链生成）。  
-- 人际交互训练（如冲突调解模拟）。  
+Ghost.ai is not just another chatbot. It is a **Large Behavioral Model (LBM) pipeline** designed to "compile" literary characters (from novels, scripts, or psychological profiles) into high-fidelity, autonomous agents.
+
+Instead of fine-tuning Large Language Models (which is costly and rigid), Ghost.ai uses **Inverse Reinforcement Learning** and **DSPy-driven Optimization** to iteratively tune the *contextual state* (Traits, Memories, Styles) of a SOTA base model until it behaves exactly like the target character.
 
 ---
 
-#### **2. 系统架构**
+## 🏗 System Architecture
 
-##### **2.1 架构总览**  
-系统采用分层设计，包含输入、处理、预测三层，支持从原始数据到行为输出的全流程处理。  
+The Ghost.ai pipeline consists of three distinct phases, moving from raw data to optimized runtime execution.
 
-```
-+-------------------+     +-------------------+     +-------------------+  
-|     输入层         |     |     处理层         |     |     预测层         |  
-| - 视觉处理         |---->| - 记忆流编码       |---->| - 行为计划生成     |  
-| - 音频解析         |     | - 反思机制         |     | - 动态反应调整     |  
-| - 文本语义分析     |     | - MoE专家融合      |     | - 多模态输出引擎   |  
-+-------------------+     +-------------------+     +-------------------+  
-```
+### Phase 1: The Narrator (Ingestion)
+*The Data Preprocessing Layer.*
+*   **Input:** Raw textual material (e.g., *Anne of Green Gables*, Movie Scripts).
+*   **Semantic Chunking:** Uses **LlamaIndex** to segment text not by paragraph, but by "Micro-Scenarios" (Context + Action + Reaction).
+*   **Stylometry Extraction:** Mathematically profiles the character's "Linguistic Bio" (TF-IDF catchphrases, sentence structure density) to ensure the agent speaks with the correct texture, not just the correct content.
 
-##### **2.2 关键子模块详解**  
-###### **2.2.1 输入层**  
-- **视觉处理流水线**：  
-  - **目标检测**：YOLOv8实时标记场景中的物体（如“厨房中的炉灶”）。  
-  - **姿态估计**：MediaPipe捕捉人体动作（如“举手打招呼”）。  
-  - **场景分割**：Segment Anything Model（SAM）划分功能区域（如“咖啡馆吧台”）。  
-- **音频处理流水线**：  
-  - **语音识别**：Whisper实时转录对话内容（如“Maria说：我同意”）。  
-  - **情感分析**：OpenSmile提取音调特征（如“愤怒” vs “愉悦”）。  
-- **文本处理流水线**：  
-  - **语义解析**：BERT提取意图（如“用户计划举办聚会”）。  
-  - **上下文关联**：构建事件链（如“邀请→装饰→聚会”）。  
+### Phase 2: The Crucible (Evolution)
+*The Optimization Engine.*
+*   **The Loop:** A recursive simulation environment where the "Newborn" agent attempts to react to scenarios from the book.
+*   **The Judge:** A "Unit Test for Personality." It compares the agent's output against the ground truth from the book using Semantic Cosine Similarity and Intent Fidelity.
+*   **The Optimizer (DSPy):** If the agent fails (e.g., "Too polite" or "Forgot a memory"), the system automatically backpropagates the error to update the **Ghost Spec** (adjusting trait weights, rewriting system prompts) rather than updating model weights.
 
-###### **2.2.2 处理层**  
-- **记忆流编码模块**：  
-  - **数据结构**：  
-    ```python
-    class MemoryRecord:
-        observation: str  # 事件描述（如“John点燃炉灶”）
-        timestamp: float  # 时间戳（毫秒级精度）
-        importance: int   # 重要性评分（1-10，由GPT-4生成）
-        context: dict     # 上下文（地点、参与者、情感标签）
-    ```  
-  - **检索算法**：  
-    基于加权公式：  
-    `Score = α·Recency + β·Relevance + γ·Importance`  
-    其中：  
-    - Recency：指数衰减函数（衰减因子λ=0.995）。  
-    - Relevance：基于Sentence-BERT的余弦相似度计算。  
-- **反思机制模块**：  
-  - **触发条件**：当记忆流中事件重要性总和超过阈值（如150分）时启动。  
-  - **推理流程**：  
-    1. 生成问题（如“John为何频繁去咖啡馆？”）。  
-    2. 检索相关记忆（最近100条记录）。  
-    3. 调用GPT-4生成推理结论（如“John对咖啡文化有浓厚兴趣”）。  
-- **MoE专家融合框架**：  
-  - **领域专家定义**：  
-    | 专家类型       | 功能描述                          | 示例输出                          |  
-    |----------------|-----------------------------------|-----------------------------------|  
-    | **空间专家**   | 编码场景布局与物体交互逻辑        | “厨房炉灶距离餐桌2米”             |  
-    | **社交专家**   | 分析角色关系与对话动态            | “Maria对John的好感度+10”          |  
-    | **情感专家**   | 推断情绪状态与行为动机            | “John因压力大选择独处”            |  
-  - **门控网络设计**：  
-    基于当前场景动态分配权重（如咖啡馆场景中社交专家权重提升30%）。  
-
-###### **2.2.3 预测层**  
-- **行为计划生成器**：  
-  - **分层规划**：  
-    - **长期计划**（天级）：如“每周三去健身房”。  
-    - **短期计划**（小时级）：如“15:00-16:00写研究报告”。  
-  - **动态调整机制**：  
-    若检测到突发事件（如“炉灶起火”），重新规划并插入应急动作。  
-- **多模态输出引擎**：  
-  - **对话生成**：基于GPT-4的角色个性化回复（如“John：需要帮忙吗？”）。  
-  - **动作映射**：将抽象计划转为具体指令（如“移动到(x,y)坐标”）。  
+### Phase 3: The Ghost Engine (Runtime)
+*The Execution Kernel.*
+*   **Mixture of Experts (MoE) Router:** A **LangGraph** orchestrator that dynamically routes user inputs to specialized "expert" prompts:
+    *   *Narrative Expert:* Handles lore and memory.
+    *   *Spatial Expert:* Handles physical navigation and object interaction.
+    *   *Psych Expert:* Manages Maslow's Needs and emotional state.
+*   **RAST (Retrieval-Augmented Style Transfer):** Injects specific "Style Exemplars" from the original text into the context window to force the LLM to mimic the character's idiolect.
 
 ---
 
-#### **3. 数据流程与训练**
+## 🧬 The Data Model: `Ghost_Spec_v3`
 
-##### **3.1 数据来源与标注**  
-| **数据类型**       | **来源**                          | **标注规则**                              |  
-|--------------------|-----------------------------------|-------------------------------------------|  
-| **媒体数据**       | 电影剧本、小说段落                | 标注角色关系、事件链、情感转折点          |  
-| **传感器数据**     | 智能家居记录、可穿戴设备          | 标记时间、地点、动作类型（如“烹饪”“运动”）|  
-| **用户交互数据**   | 虚拟环境中的玩家行为日志          | 记录对话内容、选择分支、反应时长          |  
+We define a character not by a simple prompt, but by a portable, evolvable JSON specification.
 
-##### **3.2 预处理流程**  
-1. **多模态对齐**：  
-   - 时间戳同步（如音频与视觉帧对齐至±50ms误差内）。  
-   - 空间坐标统一（将不同摄像头数据映射到同一3D坐标系）。  
-2. **噪声过滤**：  
-   - 剔除低重要性事件（重要性评分<3）。  
-   - 修复传感器异常值（如心率突然飙升至200次/分钟）。  
-
-##### **3.3 训练策略**  
-- **联合训练目标**：  
-  ```math
-  \mathcal{L} = \alpha \mathcal{L}_{behavior} + \beta \mathcal{L}_{memory} + \gamma \mathcal{L}_{reflection}
-  ```  
-  其中：  
-  - $\mathcal{L}_{behavior}$：行为预测交叉熵损失。  
-  - $\mathcal{L}_{memory}$：记忆检索准确率（Top-5召回率）。  
-  - $\mathcal{L}_{reflection}$：反思推理与人工标注的KL散度。  
-- **增量学习**：  
-  每周注入新场景数据（如节日聚会行为模式），通过EWC算法防止灾难性遗忘。  
-
----
-
-#### **4. 关键技术挑战与解决方案**
-
-| **挑战**                | **解决方案**                                                                 | **技术细节**                                                                 |  
-|-------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|  
-| **多模态时序对齐**       | 动态时间规整（DTW）算法                                                     | 对音频-视觉流进行非线性同步，支持跨模态事件关联（如“说话时点头”）。           |  
-| **长时记忆管理**         | 分层记忆存储（HMS）                                                         | - 近期记忆：全量存储（最近24小时）<br>- 长期记忆：关键事件摘要（每周生成）    |  
-| **领域专家冲突**         | 基于注意力机制的门控网络                                                    | 计算各专家输出的置信度得分，动态屏蔽低置信度结果（如社交场景中屏蔽空间专家）。|  
-| **实时性要求**           | 边缘-云端协同计算                                                           | - 边缘端：轻量模型处理传感器数据<br>- 云端：MoE模型全量运行                  |  
-
----
-
-#### **5. 系统验证与评估**
-
-##### **5.1 测试场景设计**  
-- **基础测试**：单代理日常行为模拟（如8小时家庭活动）。  
-- **压力测试**：50代理大规模社交模拟（如节日聚会，检测并发瓶颈）。  
-- **边界测试**：极端事件处理（如火灾、冲突爆发）。  
-
-##### **5.2 核心指标**  
-| **指标**            | **定义**                                  | **目标值**      |  
-|---------------------|-------------------------------------------|-----------------|  
-| 行为逼真度（BEL）   | 用户评分（1-5分） vs 人类行为基线         | ≥4.2/5          |  
-| 响应延迟            | 从输入到行为输出的端到端延迟              | ≤200ms（边缘端）|  
-| 长时一致性（LTC）   | 连续7天模拟中关键事件逻辑冲突次数          | ≤3次            |  
-
-##### **5.3 对比实验**  
-- **基线模型**：  
-  - **Rule-Based Agent**：基于预定义规则（如The Sims NPC）。  
-  - **LLM-Only Agent**：仅用GPT-4生成行为，无记忆流与MoE架构。  
-- **实验结果**：  
-  | **模型**            | **BEL** | **LTC** | **CPU占用** |  
-  |---------------------|---------|---------|-------------|  
-  | Rule-Based          | 3.1     | 1.2     | 15%         |  
-  | LLM-Only            | 3.8     | 8.7     | 72%         |  
-  | **LBM（本系统）**   | 4.5     | 2.1     | 48%         |  
-
----
-
-#### **6. 部署与优化**
-
-##### **6.1 硬件要求**  
-- **训练环境**：  
-  - 8×A100 GPU（80GB显存），1TB内存，50TB NVMe存储。  
-- **推理环境**：  
-  - 边缘设备：Jetson AGX Xavier（32GB RAM，支持TensorRT加速）。  
-  - 云端：AWS Inferentia2实例（批量处理高并发请求）。  
-
-##### **6.2 模型压缩**  
-- **量化**：FP32→INT8精度转换（精度损失<2%）。  
-- **知识蒸馏**：用GPT-4作为教师模型，训练轻量学生模型（参数量减少60%）。  
-
-##### **6.3 伦理与安全**  
-- **偏见过滤**：  
-  - 在训练数据中删除敏感内容（如种族、性别歧视言论）。  
-  - 部署实时过滤器（如拒绝生成暴力相关行为）。  
-- **审计日志**：  
-  - 记录所有生成行为的数据源与推理路径，支持事后追溯。  
-
----
-
-#### **7. 总结与路线图**
-
-**阶段性目标**：  
-- **2024 Q2**：完成单代理家庭场景行为模拟（精度≥90%）。  
-- **2024 Q4**：支持50代理社区级交互（延迟≤500ms）。  
-- **2025 Q2**：开放API供第三方开发者接入自定义场景。  
-
-**长期愿景**：  
-将LBM打造为虚拟与现实融合的核心引擎，支持元宇宙、数字孪生、人机协作等前沿领域，最终实现“人类行为可编程化”。
-
----
-
-### **附录：系统模组图**
-
-```mermaid
-graph TD
-    A[输入层] -->|视觉数据| B[目标检测]
-    A -->|音频数据| C[语音识别]
-    A -->|文本数据| D[语义解析]
-    B --> E[记忆流编码]
-    C --> E
-    D --> E
-    E --> F[反思机制]
-    F --> G[MoE专家融合]
-    G --> H[行为计划生成]
-    H --> I[多模态输出]
-    I --> J{虚拟环境/用户}
-    J -->|反馈数据| A
+```json
+{
+  "name": "Anne Shirley",
+  "base_model": "gemini-3-pro",
+  "core_personality": {
+    "traits": {
+      "openness": 0.98,
+      "neuroticism": 0.85,
+      "agreeableness": 0.45 
+    },
+    "needs_state": {
+      "social_belonging": 0.2, 
+      "esteem": 0.4
+    }
+  },
+  "linguistic_bio": {
+    "signatures": ["scope for imagination", "depths of despair"],
+    "syntax_weights": { "adjective_density": 1.4 }
+  },
+  "skills": [
+    {"name": "slate_combat", "level": 1},
+    {"name": "flowery_prose", "level": 5}
+  ]
+}
 ```
 
 ---
 
-此版本蓝图深入整合了**Generative Agents**的核心理念，并通过可落地的技术方案（如MoE门控网络、分层记忆存储）增强了细节，确保系统在行为模拟精度与计算效率之间取得平衡。
+## 🛠 Tech Stack
+
+We stand on the shoulders of giants to build the next generation of Agentic AI.
+
+| Component | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Orchestration** | **LangGraph** | Managing the cyclic state of the agent (Perception $\to$ Reflection $\to$ Action). |
+| **Optimization** | **DSPy** (MIPROv2) | Automating the "Prompt Engineering" via mathematical optimization. |
+| **Memory** | **MemGPT / Chroma** | OS-level memory management (Core Block vs. Archival Storage). |
+| **Ingestion** | **LlamaIndex** | Hierarchical parsing of narrative structures. |
+| **Evaluation** | **DeepEval / Ragas** | LLM-as-a-Judge frameworks for fidelity scoring. |
+
+---
+
+## 🗺 Roadmap
+
+- [ ] **v0.1 (Prototype):** "The Narrator" pipeline to extract Scene Tuples from *Anne of Green Gables*.
+- [ ] **v0.2 (The Loop):** Implement the `Comparator` function to score Agent Output vs. Book Truth.
+- [ ] **v0.5 (The Crucible):** Full DSPy integration to auto-tune the `Ghost_Spec.json`.
+- [ ] **v1.0 (Release):** A finalized `Anne_Shirley.json` bundle running on the Ghost Engine runtime.
+
+---
+
+## 🤝 Contributing
+
+Ghost.ai is an experimental project exploring the frontiers of **Cognitive Architectures**. We welcome contributions in:
+1.  **Inverse RL strategies** for personality extraction.
+2.  **Stylometry analysis** algorithms.
+3.  **LangGraph** workflow optimizations.
+
+*Project Lead: [sztimhdd]*
